@@ -1,10 +1,10 @@
 create or replace table contract_stream as
 select * 
-from read_csv_auto('/Users/ergestxheblati/Downloads/contract_stream.csv');
+from read_csv_auto('/Users/ergestxheblati/Documents/data_projects/metricsplaybook/contract_stream.csv');
 
 create or replace table dim_customer as
 select * 
-from read_csv_auto('/Users/ergestxheblati/Downloads/dim_customer.csv');
+from read_csv_auto('/Users/ergestxheblati/Documents/data_projects/metricsplaybook/dim_customer.csv');
 
 update contract_stream a
 set activity_occurrence = dt.activity_occurrence,
