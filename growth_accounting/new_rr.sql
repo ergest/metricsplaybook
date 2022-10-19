@@ -1,7 +1,7 @@
 /**
  * Metric: NewRR
  */
-with contract_paid as (
+with contract_signed as (
     select
         cs.customer_id,
         cs.timestamp,
