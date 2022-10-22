@@ -54,20 +54,26 @@ contract_churned as (
         join dim_customer dc on cs.customer_id = dc.id 
     where
         activity = 'contract_churned'
+),
+net_rr as (
+    select
+        coalesce(date_trunc('month', cs.timestamp), date_trunc('month', cu.timestamp), date_trunc('month', cd.timestamp), date_trunc('month', cc.timestamp)) as month,
+        sum(coalesce(cs.revenue_impact,0) + coalesce(cu.revenue_impact,0) - coalesce(cd.revenue_impact,0) - coalesce(cc.revenue_impact,0)) as net_revenue
+    from
+        contract_signed cs
+        full outer join contract_upgraded cu 
+            on cs.customer_id = cu.customer_id
+            and date_trunc('month', cs.timestamp) = date_trunc('month', cu.timestamp)
+        full outer join contract_downgraded cd
+            on cs.customer_id = cd.customer_id
+            and date_trunc('month', cs.timestamp) = date_trunc('month', cd.timestamp)
+        full outer join contract_churned cc
+            on cs.customer_id = cc.customer_id
+            and date_trunc('month', cs.timestamp) = date_trunc('month', cc.timestamp)
+    group by 1
 )
 select
-    coalesce(date_trunc('month', cs.timestamp), date_trunc('month', cu.timestamp), date_trunc('month', cd.timestamp), date_trunc('month', cc.timestamp)) as month,
-    sum(coalesce(cs.revenue_impact,0) + coalesce(cu.revenue_impact,0) - coalesce(cd.revenue_impact,0) - coalesce(cc.revenue_impact,0)) 
-        over(order by as coalesce(date_trunc('month', cs.timestamp), date_trunc('month', cu.timestamp), date_trunc('month', cd.timestamp), date_trunc('month', cc.timestamp))) pm_revenue
+    month,
+    sum(net_recurring_revenue) over(partition by month order by month) as total_rr
 from
-    contract_signed cs
-    full outer join contract_upgraded cu 
-        on cs.customer_id = cu.customer_id
-        and date_trunc('month', cs.timestamp) = date_trunc('month', cu.timestamp)
-    full outer join contract_downgraded cd
-        on cs.customer_id = cd.customer_id
-        and date_trunc('month', cs.timestamp) = date_trunc('month', cd.timestamp)
-    full outer join contract_churned cc
-        on cs.customer_id = cc.customer_id
-        and date_trunc('month', cs.timestamp) = date_trunc('month', cc.timestamp)
-group by 1
+    net_rr
