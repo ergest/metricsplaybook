@@ -1,0 +1,76 @@
+with contract_signed as (
+    select
+        cs.customer_id,
+        cs.timestamp,
+        cs.activity,
+        cs.revenue_impact,
+        dc.segment,
+        substring(date_trunc('month', dc.first_contract_signed_date)::text, 1, 7) as cohort
+    from
+        contract_stream cs
+        join dim_customer dc on cs.customer_id = dc.id
+    where
+        activity = 'contract_signed'
+        and activity_occurrence = 1
+),
+contract_upgraded as (
+    select
+        cs.customer_id,
+        cs.timestamp,
+        cs.activity,
+        cs.revenue_impact,
+        dc.segment,
+        substring(date_trunc('month', dc.first_contract_signed_date)::text, 1, 7) as cohort
+    from
+        contract_stream cs
+        join dim_customer dc on cs.customer_id = dc.id 
+    where
+        activity = 'contract_upgraded'
+),
+contract_downgraded as (
+    select
+        cs.customer_id,
+        cs.timestamp,
+        cs.activity,
+        cs.revenue_impact,
+        dc.segment,
+        substring(date_trunc('month', dc.first_contract_signed_date)::text, 1, 7) as cohort
+    from
+        contract_stream cs
+        join dim_customer dc on cs.customer_id = dc.id 
+    where
+        activity = 'contract_downgraded'
+),
+contract_churned as (
+    select
+        cs.customer_id,
+        cs.timestamp,
+        cs.activity,
+        cs.revenue_impact,
+        dc.segment,
+        substring(date_trunc('month', dc.first_contract_signed_date)::text, 1, 7) as cohort
+    from
+        contract_stream cs
+        join dim_customer dc on cs.customer_id = dc.id 
+    where
+        activity = 'contract_churned'
+),
+previous_month_rr as (
+    select
+        date_trunc('month', cc.timestamp) as month,
+        sum(cs.revenue_impact + cu.revenue_impact - cd.revenue_impact - cc.revenue_impact) as pm_revenue
+    from
+        contract_signed cs
+        join contract_upgraded cu 
+            on cs.customer_id = cu.customer_id
+            and date_trunc('month', cs.timestamp) = date_trunc('month', cu.timestamp)
+        join contract_downgraded cd
+            on cs.customer_id = cd.customer_id
+            and date_trunc('month', cs.timestamp) = date_trunc('month', cd.timestamp)
+        join contract_churned cc
+            on cs.customer_id = cc.customer_id
+            and date_trunc('month', cs.timestamp) = date_trunc('month', cc.timestamp)
+    group by 1
+)
+select *
+from previous_month_rr
