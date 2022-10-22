@@ -25,3 +25,9 @@ where
     and dt.customer_id = a.customer_id
     and dt.activity = a.activity
     and a.timestamp = dt.timestamp;
+    
+alter table dim_customer 
+add cohort text;
+
+update dim_customer 
+set cohort = substring(date_trunc('month', first_contract_signed_date)::text, 1, 7);

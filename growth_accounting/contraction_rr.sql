@@ -1,8 +1,7 @@
 /**
- * Metric: Churned Revenue
- * Assumptions: The contract_churned event is inserted with the appropriate negative amount
+ * Metric: Contracted Revenue
  */
-with contract_churned as (
+with contract_downgraded as (
     select
         cs.customer_id,
         cs.timestamp,
@@ -14,11 +13,11 @@ with contract_churned as (
         contract_stream cs
         join dim_customer dc on cs.customer_id = dc.id 
     where
-        activity = 'contract_churned'
+        activity = 'contract_downgraded'
 )
 select
     date_trunc('month', timestamp) as month,
-    -sum(revenue_impact) as revenue
+    sum(revenue_impact) as revenue
 from
     contract_churned
 group by 1
