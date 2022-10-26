@@ -1,6 +1,3 @@
-/**
- * Metric: ExpansionRR
- */
 with contract_upgraded as (
     select
         cs.customer_id,

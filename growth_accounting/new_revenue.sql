@@ -1,6 +1,3 @@
-/**
- * Metric: NewRR
- */
 with contract_started as (
     select
         cs.customer_id,

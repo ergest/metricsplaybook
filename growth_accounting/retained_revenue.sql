@@ -1,6 +1,3 @@
-/**
- * Metric: Retained revenue
- */
 with contract_retained as (
     select
         cs.customer_id,

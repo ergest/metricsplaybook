@@ -1,2 +1,3 @@
 metricsplaybook.duckdb.wal
 .DS_Store
+logs/dbt.log
