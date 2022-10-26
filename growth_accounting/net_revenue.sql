@@ -1,4 +1,4 @@
-with contract_signed as (
+with contract_started as (
     select
         cs.customer_id,
         cs.timestamp,
@@ -10,8 +10,7 @@ with contract_signed as (
         contract_stream cs
         join dim_customer dc on cs.customer_id = dc.id
     where
-        activity = 'contract_signed'
-        and activity_occurrence = 1
+        activity = 'new_contract_started'
 ),
 contract_upgraded as (
     select
@@ -25,7 +24,7 @@ contract_upgraded as (
         contract_stream cs
         join dim_customer dc on cs.customer_id = dc.id 
     where
-        activity = 'contract_upgraded'
+        activity = 'expansion_contract_started'
 ),
 contract_downgraded as (
     select
@@ -39,7 +38,7 @@ contract_downgraded as (
         contract_stream cs
         join dim_customer dc on cs.customer_id = dc.id 
     where
-        activity = 'contract_downgraded'
+        activity = 'contraction_contract_started'
 ),
 contract_churned as (
     select
@@ -53,27 +52,21 @@ contract_churned as (
         contract_stream cs
         join dim_customer dc on cs.customer_id = dc.id 
     where
-        activity = 'contract_churned'
+        activity = 'customer_churn_committed'
 ),
-net_rr as (
-    select
-        coalesce(date_trunc('month', cs.timestamp), date_trunc('month', cu.timestamp), date_trunc('month', cd.timestamp), date_trunc('month', cc.timestamp)) as month,
-        sum(coalesce(cs.revenue_impact,0) + coalesce(cu.revenue_impact,0) - coalesce(cd.revenue_impact,0) - coalesce(cc.revenue_impact,0)) as net_revenue
-    from
-        contract_signed cs
-        full outer join contract_upgraded cu 
-            on cs.customer_id = cu.customer_id
-            and date_trunc('month', cs.timestamp) = date_trunc('month', cu.timestamp)
-        full outer join contract_downgraded cd
-            on cs.customer_id = cd.customer_id
-            and date_trunc('month', cs.timestamp) = date_trunc('month', cd.timestamp)
-        full outer join contract_churned cc
-            on cs.customer_id = cc.customer_id
-            and date_trunc('month', cs.timestamp) = date_trunc('month', cc.timestamp)
-    group by 1
-)
 select
-    month,
-    sum(net_recurring_revenue) over(partition by month order by month) as total_rr
+    coalesce(date_trunc('month', cs.timestamp), date_trunc('month', cu.timestamp), date_trunc('month', cd.timestamp), date_trunc('month', cc.timestamp)) as month,
+    sum(coalesce(cs.revenue_impact,0) + coalesce(cu.revenue_impact,0) - coalesce(cd.revenue_impact,0) - coalesce(cc.revenue_impact,0)) as net_revenue
 from
-    net_rr
+    contract_signed cs
+    full outer join contract_upgraded cu 
+        on cs.customer_id = cu.customer_id
+        and date_trunc('month', cs.timestamp) = date_trunc('month', cu.timestamp)
+    full outer join contract_downgraded cd
+        on cs.customer_id = cd.customer_id
+        and date_trunc('month', cs.timestamp) = date_trunc('month', cd.timestamp)
+    full outer join contract_churned cc
+        on cs.customer_id = cc.customer_id
+        and date_trunc('month', cs.timestamp) = date_trunc('month', cc.timestamp)
+group by 1
+

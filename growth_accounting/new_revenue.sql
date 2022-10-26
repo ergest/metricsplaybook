@@ -1,8 +1,7 @@
 /**
- * Metric: Churned Revenue
- * Assumptions: The contract_churned event is inserted with the appropriate negative amount
+ * Metric: NewRR
  */
-with contract_churned as (
+with contract_started as (
     select
         cs.customer_id,
         cs.timestamp,
@@ -12,14 +11,15 @@ with contract_churned as (
         substring(date_trunc('month', dc.first_contract_signed_date)::text, 1, 7) as cohort
     from
         contract_stream cs
-        join dim_customer dc on cs.customer_id = dc.id 
+        join dim_customer dc on cs.customer_id = dc.id
     where
-        activity = 'contract_churned'
+        activity = 'new_contract_started'
 )
+--sample aggregation
 select
     date_trunc('month', timestamp) as month,
-    -sum(revenue_impact) as revenue
+    sum(revenue_impact) as revenue
 from
-    contract_churned
+    contract_started
 group by 1
 order by 1;

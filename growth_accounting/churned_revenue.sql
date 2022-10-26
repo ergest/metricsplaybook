@@ -1,7 +1,4 @@
-/**
- * Metric: Contracted Revenue
- */
-with contract_downgraded as (
+with contract_churned as (
     select
         cs.customer_id,
         cs.timestamp,
@@ -13,7 +10,7 @@ with contract_downgraded as (
         contract_stream cs
         join dim_customer dc on cs.customer_id = dc.id 
     where
-        activity = 'contract_downgraded'
+        activity = 'customer_churn_committed'
 )
 select
     date_trunc('month', timestamp) as month,

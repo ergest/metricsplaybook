@@ -1,7 +1,4 @@
-/**
- * Metric: ExpansionRR
- */
-with contract_upgraded as (
+with contract_downgraded as (
     select
         cs.customer_id,
         cs.timestamp,
@@ -13,12 +10,12 @@ with contract_upgraded as (
         contract_stream cs
         join dim_customer dc on cs.customer_id = dc.id 
     where
-        activity = 'contract_upgraded'
+        activity = 'contraction_contract_started'
 )
 select
     date_trunc('month', timestamp) as month,
     sum(revenue_impact) as revenue
 from
-    contract_upgraded
+    contract_downgraded
 group by 1
 order by 1;
