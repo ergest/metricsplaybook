@@ -53,12 +53,12 @@ contract_churned as (
         join dim_customer dc on cs.customer_id = dc.id 
     where
         activity = 'customer_churn_committed'
-),
+)
 select
     coalesce(date_trunc('month', cs.timestamp), date_trunc('month', cu.timestamp), date_trunc('month', cd.timestamp), date_trunc('month', cc.timestamp)) as month,
-    sum(coalesce(cs.revenue_impact,0) + coalesce(cu.revenue_impact,0) - coalesce(cd.revenue_impact,0) - coalesce(cc.revenue_impact,0)) as net_revenue
+    sum(coalesce(cs.revenue_impact,0) + coalesce(cu.revenue_impact,0) - coalesce(cd.revenue_impact,0) - coalesce(cc.revenue_impact,0)) as net_recurring_revenue
 from
-    contract_signed cs
+    contract_started cs
     full outer join contract_upgraded cu 
         on cs.customer_id = cu.customer_id
         and date_trunc('month', cs.timestamp) = date_trunc('month', cu.timestamp)
@@ -69,4 +69,3 @@ from
         on cs.customer_id = cc.customer_id
         and date_trunc('month', cs.timestamp) = date_trunc('month', cc.timestamp)
 group by 1
-
