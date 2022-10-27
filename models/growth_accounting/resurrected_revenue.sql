@@ -8,6 +8,6 @@ select
     activity,
     revenue_impact
 from
-    contract_stream cs
+    {{ ref('raw_contract_stream') }}
 where
     activity = 'resurrection_contract_started'

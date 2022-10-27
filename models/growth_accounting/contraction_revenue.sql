@@ -10,4 +10,4 @@ select
 from
     {{ ref('raw_contract_stream') }}
 where
-    activity = 'expansion_contract_started'
+    activity = 'contraction_contract_started'
