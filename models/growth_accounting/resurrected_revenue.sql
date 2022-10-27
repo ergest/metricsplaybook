@@ -1,21 +1,13 @@
-with contract_resurrected as (
-    select
-        cs.customer_id,
-        cs.timestamp,
-        cs.activity,
-        cs.revenue_impact,
-        dc.segment,
-        substring(date_trunc('month', dc.first_contract_signed_date)::text, 1, 7) as cohort
-    from
-        contract_stream cs
-        join dim_customer dc on cs.customer_id = dc.id 
-    where
-        activity = 'resurrection_contract_started'
-)
+{{
+    config(materialized = 'view')
+}}
+
 select
-    date_trunc('month', timestamp) as month,
-    sum(revenue_impact) as revenue
+    customer_id,
+    timestamp,
+    activity,
+    revenue_impact
 from
-    contract_resurrected
-group by 1
-order by 1;
+    contract_stream cs
+where
+    activity = 'resurrection_contract_started'
