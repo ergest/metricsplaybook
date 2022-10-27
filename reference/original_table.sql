@@ -1,9 +1,3 @@
-create table contract_transactions (
-    customer_id integer,
-    transaction_ts timestamp,
-    amount double
-);
-
 /*
 Contract Activities
 -------------------
