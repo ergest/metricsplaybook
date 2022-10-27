@@ -8,6 +8,6 @@ select
     activity,
     revenue_impact
 from
-    {{ ref('raw_contract_stream') }}
+    {{ ref('contract_stream') }}
 where
     activity = 'expansion_contract_started'

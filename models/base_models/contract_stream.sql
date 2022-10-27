@@ -24,4 +24,4 @@
 }}
 
 select * 
-from read_csv_auto('seeds/contract_stream.csv')
+from read_csv_auto('raw_csvs/src_contract_stream.csv')
