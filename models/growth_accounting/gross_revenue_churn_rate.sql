@@ -19,7 +19,7 @@ contraction as (
     group by 1
 )
 select
-    cr.month as this_period,
+    cr.month,
     (coalesce(chr.churned_rr, 0) + coalesce(cr.contraction_rr, 0)) / trr.total_rr as gcrcr
 from
     contraction cr

@@ -27,7 +27,7 @@ expansion as (
     group by 1
 )
 select
-    cr.month as this_period,
+    cr.month,
     (coalesce(exp.expansion_rr, 0) - coalesce(chr.churned_rr, 0) - coalesce(cr.contraction_rr, 0)) / trr.total_rr as nrcr
 from
     contraction cr
