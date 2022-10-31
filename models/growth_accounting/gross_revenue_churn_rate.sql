@@ -24,4 +24,4 @@ select
 from
     contraction cr
     join churn chr on cr.month = chr.month
-    join {{ ref('total_revenue') }} trr on trr.month = cr.month - 1
+    join {{ ref('total_revenue') }} trr on trr.month = cr.month - interval 1 month
