@@ -12,6 +12,6 @@ with total_rr_diff as (
 )
 select
     month,
-    1 - (total_rr_current - total_rr_previous) as growth_rate
+    1 - (total_rr_current / total_rr_previous) as growth_rate
 from
     total_rr_diff
