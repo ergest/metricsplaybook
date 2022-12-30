@@ -8,9 +8,9 @@ select
 from
     {{ ref('new_revenue') }} nr
     full outer join {{ ref('expansion_revenue') }} er
-        and date_trunc('month', nr.timestamp) = date_trunc('month', er.timestamp)
+        on date_trunc('month', nr.timestamp) = date_trunc('month', er.timestamp)
     full outer join {{ ref('contraction_revenue') }} cr
-        and date_trunc('month', nr.timestamp) = date_trunc('month', cr.timestamp)
+        on date_trunc('month', nr.timestamp) = date_trunc('month', cr.timestamp)
     full outer join {{ ref('churned_revenue') }} cxr
-        and date_trunc('month', nr.timestamp) = date_trunc('month', cxr.timestamp)
-group by rollup?
+        on date_trunc('month', nr.timestamp) = date_trunc('month', cxr.timestamp)
+group by 1
