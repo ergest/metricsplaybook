@@ -4,7 +4,6 @@ Flexstats macro
     source_cte,
     anchor_date,
     metric_calculation,
-    inputs,
     metric_slices = [],
     date_slices = ["year", "quarter", "month", "week"],
     include_overall_total = true,
@@ -16,11 +15,8 @@ Flexstats macro
 
 {#- CONSTANTS -#}
 
-{# Flexstats metrics can be pivoted by this list of date pivots -#}
 {%- set supported_date_slices = ["year", "quarter", "month", "week", "day"] -%}
-
-{# "Flexport Total" variables -#}
-{%- set total_name = "flexport_total" -%}
+{%- set total_name = "total" -%}
 {%- set total_value = 'Total' -%}
 
 
@@ -106,17 +102,15 @@ cte_grouping_sets as (
     {% endfor -%}
 
     {% if include_overall_total == true -%}
-      object_construct('{{total_name}}','{{total_value}}') as {{total_name}}_object,
+      '{{total_value}}' as {{total_name}}_object,
     {% endif -%}
 
     {# Loop through each slice & create helper columns for later use -#}
     {# Store combination dictionary values, concatenated dimension names, and concatenated dimension values -#}
     {%- for combination in metric_slices -%}
-      object_construct_keep_null(
-        {%- for dimension in combination -%}
-          '{{dimension}}', {{dimension}} {%- if not loop.last %}, {% endif -%}
-        {% endfor -%}
-      ) as combination_{{loop.index}},
+      {%- for dimension in combination -%}
+        {{dimension}} {%- if not loop.last %}, {% endif -%}
+      {% endfor %} as combination_{{loop.index}},
     {% endfor -%}
 
     {# grouping() returns 0 for a row that is grouped on the column specified, and 1 when left out of aggregation -#}
@@ -128,26 +122,13 @@ cte_grouping_sets as (
       grouping({{total_name}}_object) as {{total_name}}_bit,
     {% endif -%}
 
-    {# Loop through all input variables and include them as columns -#}
-    {% for column, expression in inputs.items() -%}
-      {{expression}} as {{column}},
-    {% endfor -%}
-
-    {# Create a variant object of the input fields for context; also include numerator and denominator -#}
-    object_construct(
-      {% for column, expression in inputs.items() -%}
-        '{{column}}', {{expression}}{%- if not loop.last %}, {% endif -%}
-      {% endfor -%},
-       'numerator', {{"null" if metric_numerator is none else metric_numerator}},
-       'denominator', {{"null" if metric_denominator is none else metric_denominator}}
-    ) as input_object,
     {{"null" if metric_denominator is none else metric_denominator}} as metric_denominators,
     '{{metric_calculation}}' as metric_calculation,
     {{metric_calculation}} as metric_value
   from
     {{ source_cte }}
   {# Allow future dates for forward-looking metrics, with an upper bound of 1 year into the future -#}
-  where {{ anchor_date }} between '2014-01-01' and dateadd('day', 365, current_date())
+  where {{ anchor_date }} between '2014-01-01' and current_date() + interval 365 day
   group by grouping sets (
     {# Add grouping sets for every combination of date_grain_pivots and slice -#}
     {%- for date_slice in date_slices -%}
@@ -182,36 +163,13 @@ cte_final as (
         when combination_{{loop.index}}_bit = 0 then combination_{{loop.index}}
       {% endfor -%}
       {% if include_overall_total == true -%}
-        when flexport_total_bit = 0 then {{total_name}}_object
+        when total_bit = 0 then {{total_name}}_object
       {% endif -%}
     end as slice_object,
-    {# Create a string of dimension names, utilizing the key-value pairs -#}
-    case
-      {% for _ in metric_slices -%}
-        when combination_{{loop.index}}_bit = 0 then array_to_string(object_keys(combination_{{loop.index}}), ' x ')
-      {% endfor -%}
-      {% if include_overall_total == true -%}
-        when flexport_total_bit = 0 then '{{total_name}}'
-      {% endif -%}
-    end as slice_dimensions,
-    {# Create a string of dimension values, utilizing the key-value pairs -#}
-    case
-      {% for _ in metric_slices -%}
-        when combination_{{loop.index}}_bit = 0 then concat(
-          {%- for dimension in metric_slices[loop.index0] -%}
-            ifnull(slice_object:{{dimension}}, 'null') {%- if not loop.last -%}, ' x ', {% endif %}
-          {%- endfor -%}
-        )
-      {% endfor -%}
-      {% if include_overall_total == true -%}
-        when flexport_total_bit = 0 then '{{total_value}}'
-      {% endif -%}
-    end as slice_value,
     case
       when metric_denominators != 0 and metric_value is null then 0
       else metric_value
     end as metric_value,
-    input_object,
     metric_calculation
   from
     cte_grouping_sets
