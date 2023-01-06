@@ -10,7 +10,7 @@ with cte_prep as (
         m.revenue_impact,
         m.activity
     from
-        {{ ref('churned_revenue')}} m
+        {{ ref('new_revenue')}} m
         join {{ ref('dim_customer')}} c
             on m.customer_id = c.id
 )
