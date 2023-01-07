@@ -11,7 +11,7 @@ with cte_prep as (
         m.revenue_impact,
         m.activity
     from
-        {{ ref('churned_revenue')}} m
+        {{ ref('churned_mrr')}} m
         join {{ ref('dim_customer')}} c
             on m.customer_id = c.id
 )
@@ -43,16 +43,10 @@ with cte_prep as (
 )
 select
     case
-        when year_bit = 0 then 'year'
-        when quarter_bit = 0 then 'quarter'
         when month_bit = 0 then 'month'
-        when week_bit = 0 then 'week'
     end as date_grain,
     case
-        when year_bit = 0 then metric_year
-        when quarter_bit = 0 then metric_quarter
         when month_bit = 0 then metric_month
-        when week_bit = 0 then metric_week
     end as metric_date,
     case
         when dimension_1_bit = 0 then dimension_1

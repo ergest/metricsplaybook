@@ -7,7 +7,7 @@ with churn as (
         coalesce(date_trunc('month', timestamp)) as month,
         sum(revenue_impact) as churned_rr
     from
-        {{ ref('churned_revenue') }}
+        {{ ref('churned_mrr') }}
     group by 1
 ),
 contraction as (
@@ -15,7 +15,7 @@ contraction as (
         coalesce(date_trunc('month', timestamp)) as month,
         sum(revenue_impact) as contraction_rr
     from
-        {{ ref('contraction_revenue') }}
+        {{ ref('contraction_mrr') }}
     group by 1
 )
 select
