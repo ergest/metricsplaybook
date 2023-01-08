@@ -1,27 +1,14 @@
-{{
+{{-
     config(materialized = 'table')
-}}
+-}}
 
-with cte_prep as (
-    select
-        c.segment,
-        c.channel,
-        c.cohort,
-        m.timestamp,
-        m.revenue_impact,
-        m.activity
-    from
-        {{ ref('expansion_mrr')}} m
-        join {{ ref('dim_customer')}} c
-            on m.customer_id = c.id
-)
-, cte_grouping_sets as (
+with cte_grouping_sets as (
     select
         date_trunc('month', timestamp)::date as metric_month,
         grouping(metric_month) as month_bit,
         segment as dimension_1,
         channel as dimension_2,
-        cohort as dimension_3,
+        cohort  as dimension_3,
         'Total' as total_object,
         grouping(dimension_1) as dimension_1_bit,
         grouping(dimension_2) as dimension_2_bit,
@@ -30,7 +17,7 @@ with cte_prep as (
         'sum(revenue_impact)' as metric_calculation,
         sum(revenue_impact) as metric_value,
     from
-        cte_prep
+        {{ ref('expansion_mrr') }}
     where
         timestamp between '2014-01-01' and current_date() + interval 365 day
   group by 
