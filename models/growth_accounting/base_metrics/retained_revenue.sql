@@ -18,4 +18,4 @@ from
     join {{ ref('dim_date') }} dt
         on dt.series_day = date_trunc('day', m.timestamp)
 where
-    m.activity = 'contraction_contract_started'
+    m.activity = 'contract_retained'

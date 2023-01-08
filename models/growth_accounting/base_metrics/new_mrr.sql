@@ -3,6 +3,7 @@
 -}}
 
 select
+    c.id as customer_id,
     c.segment,
     c.channel,
     c.cohort,
@@ -17,4 +18,4 @@ from
     join {{ ref('dim_date') }} dt
         on dt.series_day = date_trunc('day', m.timestamp)
 where
-    activity = 'new_contract_started'
+    m.activity = 'new_contract_started'

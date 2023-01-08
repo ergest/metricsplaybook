@@ -3,6 +3,7 @@
 -}}
 
 select
+    c.id as customer_id,
     c.segment,
     c.channel,
     c.cohort,
