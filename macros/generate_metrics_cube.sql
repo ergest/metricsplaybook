@@ -1,4 +1,3 @@
-Flexstats macro
 {%-
   macro generate_metrics_cube (
     source_cte,
@@ -178,7 +177,7 @@ cte_final as (
       {% if include_overall_total == true -%}
         when total_bit = 0 then '{{total_name}}'
       {% endif -%}
-    end as slice_dimensions,
+    end as slice_dimension,
     {# Create a string of dimension values, utilizing the key-value pairs -#}
     case
       {% for _ in metric_slices -%}
