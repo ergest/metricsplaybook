@@ -109,7 +109,7 @@ cte_grouping_sets as (
     {# Store combination dictionary values, concatenated dimension names, and concatenated dimension values -#}
     {%- for combination in metric_slices -%}
       {%- for dimension in combination -%}
-        {{dimension}} {%- if not loop.last %}, {% endif -%}
+        concat('{"dim_name": "{{dimension}}", "dim_value": "', {{dimension}} , '"}') {%- if not loop.last %}, {% endif -%}
       {% endfor %} as combination_{{loop.index}},
     {% endfor -%}
 
@@ -166,6 +166,32 @@ cte_final as (
         when total_bit = 0 then {{total_name}}_object
       {% endif -%}
     end as slice_object,
+    {# Create a string of dimension names, utilizing the key-value pairs -#}
+    case
+      {% for _ in metric_slices -%}
+        when combination_{{loop.index}}_bit = 0 then concat(
+          {%- for dimension in metric_slices[loop.index0] -%}
+            ifnull(json_extract_string(slice_object, '$.dim_name'), 'null') {%- if not loop.last -%}, ' x ', {% endif %}
+          {%- endfor -%}
+        )
+      {% endfor -%}
+      {% if include_overall_total == true -%}
+        when total_bit = 0 then '{{total_name}}'
+      {% endif -%}
+    end as slice_dimensions,
+    {# Create a string of dimension values, utilizing the key-value pairs -#}
+    case
+      {% for _ in metric_slices -%}
+        when combination_{{loop.index}}_bit = 0 then concat(
+          {%- for dimension in metric_slices[loop.index0] -%}
+            ifnull(json_extract_string(slice_object, '$.dim_value'), 'null') {%- if not loop.last -%}, ' x ', {% endif %}
+          {%- endfor -%}
+        )
+      {% endfor -%}
+      {% if include_overall_total == true -%}
+        when total_bit = 0 then '{{total_value}}'
+      {% endif -%}
+    end as slice_value,
     case
       when metric_denominators != 0 and metric_value is null then 0
       else metric_value
@@ -174,7 +200,5 @@ cte_final as (
   from
     cte_grouping_sets
 )
-
 select * from cte_final
-
 {% endmacro %}
