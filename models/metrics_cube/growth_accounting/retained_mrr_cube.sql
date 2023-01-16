@@ -11,7 +11,7 @@ with cte_prep as (
         m.activity,
         m.plan_type
     from
-        {{ ref('contraction_mrr')}} m
+        {{ ref('retained_mrr')}} m
         join {{ ref('dim_customer')}} c
             on m.customer_id = c.id
 )

@@ -8,7 +8,8 @@ with cte_prep as (
         c.channel,
         m.timestamp,
         m.revenue_impact,
-        m.activity
+        m.activity,
+        m.plan_type
     from
         {{ ref('expansion_mrr')}} m
         join {{ ref('dim_customer')}} c
@@ -21,7 +22,8 @@ with cte_prep as (
         metric_calculation = 'sum(revenue_impact)',
         metric_slices = [
                 ['segment'],
-                ['channel']
+                ['channel'],
+                ['plan_type']
         ],
         date_slices = ['month'],
         include_overall_total = true
