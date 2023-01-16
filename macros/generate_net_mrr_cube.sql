@@ -10,7 +10,7 @@ with cte_new_mrr as (
         slice_dimension,
         slice_value
     from
-        {{ ref('churned_mrr_cube') }}
+        {{ ref('new_mrr_cube') }}
     where
         slice_dimension = '{{ dimension }}'
 )
