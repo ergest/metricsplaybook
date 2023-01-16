@@ -9,7 +9,8 @@ select
     c.cohort,
     m.timestamp,
     m.revenue_impact,
-    m.activity
+    m.activity,
+    m.plan_type
 from
     {{ ref('contract_stream') }} m
     join {{ ref('dim_customer')}} c

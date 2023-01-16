@@ -9,6 +9,7 @@
                             id,
                             customer_id,
                             activity,
+                            plan_type,
                             timestamp,
                             row_number() over(partition by customer_id, activity order by timestamp asc) as activity_occurrence,
                             lead(timestamp, 1) over(partition by customer_id, activity order by timestamp asc) as activity_repeated_at
