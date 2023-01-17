@@ -1,9 +1,6 @@
-{%-
-    macro generate_net_mrr_cube (
-        dimension,
-        is_snapshot_reliant_metric = false
-    )
--%}
+{{-
+    config(materialized = 'table')
+-}}
 
 with cte_new_mrr as (
     select
@@ -14,8 +11,6 @@ with cte_new_mrr as (
         metric_value
     from
         {{ ref('new_mrr_cube') }}
-    where
-        slice_dimension = '{{ dimension }}'
 )
 , cte_exapnsion_mrr as (
     select
@@ -26,8 +21,6 @@ with cte_new_mrr as (
         metric_value
     from
         {{ ref('expansion_mrr_cube') }} 
-    where
-        slice_dimension = '{{ dimension }}'
 )
 , cte_contraction_mrr as (
     select
@@ -38,8 +31,6 @@ with cte_new_mrr as (
         metric_value
     from
         {{ ref('contraction_mrr_cube') }} 
-    where
-        slice_dimension = '{{ dimension }}'
 )
 , cte_churned_mrr as (
     select
@@ -50,12 +41,9 @@ with cte_new_mrr as (
         metric_value
     from
         {{ ref('churned_mrr_cube') }} 
-    where
-        slice_dimension = '{{ dimension }}'
 )
 select
     '{{ model.name }}' as metric_model,
-    {{ is_snapshot_reliant_metric }} as is_snapshot_reliant_metric,
     coalesce(nr.date_grain, er.date_grain, cr.date_grain, ch.date_grain) as date_grain,
     coalesce(nr.metric_date, er.metric_date, cr.metric_date, ch.metric_date) as metric_date,
     coalesce(nr.slice_dimension, er.slice_dimension, cr.slice_dimension, ch.slice_dimension) as slice_dimension,
@@ -73,6 +61,4 @@ from
     full outer join cte_churned_mrr ch
         on nr.metric_date = ch.metric_date
         and nr.slice_dimension = ch.slice_dimension
-group by 1,2,3,4,5,6,7
-
-{%- endmacro %}
+group by 1,2,3,4,5,6
