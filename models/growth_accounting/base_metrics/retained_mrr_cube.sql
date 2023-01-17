@@ -4,16 +4,20 @@
 
 with cte_prep as (
     select
+        c.id as customer_id,
         c.segment,
         c.channel,
+        c.cohort,
         m.timestamp,
         m.revenue_impact,
         m.activity,
         m.plan_type
     from
-        {{ ref('new_mrr')}} m
+        {{ ref('contract_stream') }} m
         join {{ ref('dim_customer')}} c
             on m.customer_id = c.id
+    where
+        m.activity = 'contract_retained'
 )
 {{
     generate_metrics_cube (
