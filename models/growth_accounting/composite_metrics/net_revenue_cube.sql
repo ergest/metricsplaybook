@@ -10,7 +10,7 @@ with cte_new_mrr as (
         slice_value,
         metric_value
     from
-        {{ ref('new_mrr_cube') }}
+        {{ ref('new_revenue_cube') }}
 )
 , cte_exapnsion_mrr as (
     select
@@ -20,7 +20,7 @@ with cte_new_mrr as (
         slice_value,
         metric_value
     from
-        {{ ref('expansion_mrr_cube') }} 
+        {{ ref('expansion_revenue_cube') }} 
 )
 , cte_contraction_mrr as (
     select
@@ -30,7 +30,7 @@ with cte_new_mrr as (
         slice_value,
         metric_value
     from
-        {{ ref('contraction_mrr_cube') }} 
+        {{ ref('contraction_revenue_cube') }} 
 )
 , cte_churned_mrr as (
     select
@@ -40,7 +40,7 @@ with cte_new_mrr as (
         slice_value,
         metric_value
     from
-        {{ ref('churned_mrr_cube') }} 
+        {{ ref('churned_revenue_cube') }} 
 )
 select
     '{{ model.name }}' as metric_model,
