@@ -2,7 +2,7 @@
     config(materialized = 'table')
 -}}
 
-with cte_new_mrr as (
+with cte_new_revenue as (
     select
         date_grain,
         metric_date,
@@ -12,7 +12,7 @@ with cte_new_mrr as (
     from
         {{ ref('new_revenue_cube') }}
 )
-, cte_exapnsion_mrr as (
+, cte_exapnsion_revenue as (
     select
         date_grain,
         metric_date,
@@ -22,7 +22,7 @@ with cte_new_mrr as (
     from
         {{ ref('expansion_revenue_cube') }} 
 )
-, cte_contraction_mrr as (
+, cte_contraction_revenue as (
     select
         date_grain,
         metric_date,
@@ -32,7 +32,7 @@ with cte_new_mrr as (
     from
         {{ ref('contraction_revenue_cube') }} 
 )
-, cte_churned_mrr as (
+, cte_churned_revenue as (
     select
         date_grain,
         metric_date,
@@ -48,17 +48,17 @@ select
     coalesce(nr.metric_date, er.metric_date, cr.metric_date, ch.metric_date) as metric_date,
     coalesce(nr.slice_dimension, er.slice_dimension, cr.slice_dimension, ch.slice_dimension) as slice_dimension,
     coalesce(nr.slice_value, er.slice_value, cr.slice_value, ch.slice_value) as slice_value,
-    'new_mrr + expansion_mrr - contraction_mrr - churn_mrr' as metric_calculation,
+    'new_rr + expansion_rr - contraction_rr - churn_rr' as metric_calculation,
     sum(coalesce(nr.metric_value, 0) + coalesce(er.metric_value, 0) - coalesce(cr.metric_value, 0) - coalesce(ch.metric_value, 0)) as metric_value
 from
-    cte_new_mrr nr
-    full outer join cte_exapnsion_mrr er
+    cte_new_revenue nr
+    full outer join cte_exapnsion_revenue er
         on nr.metric_date = er.metric_date
         and nr.slice_dimension = er.slice_dimension
-    full outer join cte_contraction_mrr cr
+    full outer join cte_contraction_revenue cr
         on nr.metric_date = cr.metric_date
         and nr.slice_dimension = cr.slice_dimension
-    full outer join cte_churned_mrr ch
+    full outer join cte_churned_revenue ch
         on nr.metric_date = ch.metric_date
         and nr.slice_dimension = ch.slice_dimension
 group by 1,2,3,4,5,6
