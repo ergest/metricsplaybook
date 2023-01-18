@@ -15,3 +15,4 @@ from
     left join {{ ref('net_revenue_cube') }} nr 
         on tr.metric_date = nr.metric_date + interval 1 month
         and nr.slice_dimension = tr.slice_dimension
+        and nr.date_grain = tr.date_grain

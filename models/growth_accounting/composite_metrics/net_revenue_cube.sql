@@ -2,46 +2,6 @@
     config(materialized = 'table')
 -}}
 
-with cte_new_revenue as (
-    select
-        date_grain,
-        metric_date,
-        slice_dimension,
-        slice_value,
-        metric_value
-    from
-        {{ ref('new_revenue_cube') }}
-)
-, cte_exapnsion_revenue as (
-    select
-        date_grain,
-        metric_date,
-        slice_dimension,
-        slice_value,
-        metric_value
-    from
-        {{ ref('expansion_revenue_cube') }} 
-)
-, cte_contraction_revenue as (
-    select
-        date_grain,
-        metric_date,
-        slice_dimension,
-        slice_value,
-        metric_value
-    from
-        {{ ref('contraction_revenue_cube') }} 
-)
-, cte_churned_revenue as (
-    select
-        date_grain,
-        metric_date,
-        slice_dimension,
-        slice_value,
-        metric_value
-    from
-        {{ ref('churned_revenue_cube') }} 
-)
 select
     '{{ model.name }}' as metric_model,
     coalesce(nr.date_grain, er.date_grain, cr.date_grain, ch.date_grain) as date_grain,
@@ -51,14 +11,17 @@ select
     'new_rr + expansion_rr - contraction_rr - churn_rr' as metric_calculation,
     sum(coalesce(nr.metric_value, 0) + coalesce(er.metric_value, 0) - coalesce(cr.metric_value, 0) - coalesce(ch.metric_value, 0)) as metric_value
 from
-    cte_new_revenue nr
-    full outer join cte_exapnsion_revenue er
+    {{ ref('new_revenue_cube') }} nr
+    full outer join {{ ref('expansion_revenue_cube') }}  er
         on nr.metric_date = er.metric_date
         and nr.slice_dimension = er.slice_dimension
-    full outer join cte_contraction_revenue cr
+        and nr.date_grain = er.date_grain
+    full outer join {{ ref('contraction_revenue_cube') }}  cr
         on nr.metric_date = cr.metric_date
         and nr.slice_dimension = cr.slice_dimension
-    full outer join cte_churned_revenue ch
+        and nr.date_grain = cr.date_grain
+    full outer join {{ ref('churned_revenue_cube') }}  ch
         on nr.metric_date = ch.metric_date
         and nr.slice_dimension = ch.slice_dimension
+        and nr.date_grain = ch.date_grain
 group by 1,2,3,4,5,6
