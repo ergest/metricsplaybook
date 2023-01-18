@@ -18,6 +18,7 @@ with cte_prep as (
             on m.customer_id = c.id
     where
         m.activity = 'new_contract_started'
+)
 {{
     generate_metrics_cube (
         source_cte = 'cte_prep',
