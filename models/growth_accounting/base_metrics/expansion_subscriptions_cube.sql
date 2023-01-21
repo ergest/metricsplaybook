@@ -23,7 +23,7 @@ with cte_prep as (
     generate_metrics_cube (
         source_cte = 'cte_prep',
         anchor_date = 'timestamp',
-        metric_calculation = 'sum(revenue_impact)',
+        metric_calculation = 'count(customer_id)',
         metric_slices = [
                 ['segment'],
                 ['channel'],
