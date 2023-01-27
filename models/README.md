@@ -28,3 +28,6 @@ If a customer spent $12 last period (t-1) and then spent:
 - Spent $15 this period (t) => insert $12 retained revenue + $3 expansion revenue
 - Spent $10 this period (t) => insert $10 retained revenue + $2 contraction revenue
 - Spent $0  this period (t) => insert $12 churned revenue
+
+The Contract table is modeled as an ActivitSchema. You can find out more about that model [here](http://activityschema.com) 
+This allows for tremendous flexibility and ease of use when building the cube.
