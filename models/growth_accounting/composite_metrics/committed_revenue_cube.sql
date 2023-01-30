@@ -4,8 +4,11 @@
 
 select
     '{{ model.name }}' as metric_model,
+    false as is_snapshot_reliant_metric,
+    tr.anchor_date,
     tr.date_grain,
     tr.metric_date,
+    tr.slice_object,
     tr.slice_dimension,
     tr.slice_value,
     'tr.total_recurring_revenue(t) + nr.net_recurring_revenue(t+1)' as metric_calculation,

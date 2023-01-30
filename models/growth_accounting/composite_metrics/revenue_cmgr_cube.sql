@@ -5,8 +5,11 @@
 with cte_cmgr_calculation as (
     select
         '{{ model.name }}' as metric_model,
+        false as is_snapshot_reliant_metric,
+        tm.anchor_date,
         tm.date_grain,
         tm.metric_date,
+        tm.slice_object,
         tm.slice_dimension,
         tm.slice_value,
         '((total_rr(t) / total_rr(t-12)) ^ 1/12) - 1' as metric_calculation,

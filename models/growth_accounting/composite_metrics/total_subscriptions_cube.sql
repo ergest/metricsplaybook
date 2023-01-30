@@ -4,8 +4,11 @@
 
 select
     '{{ model.name }}' as metric_model,
+    false as is_snapshot_reliant_metric,
+    anchor_date,
     date_grain,
     metric_date,
+    slice_object,
     slice_dimension,
     slice_value,
     'cumulative sum of net_subs' as metric_calculation,

@@ -142,62 +142,62 @@ cte_grouping_sets as (
 ),
 
 cte_final as (
-  select
-    '{{ model.name }}' as metric_model,
-    {{ is_snapshot_reliant_metric }} as is_snapshot_reliant_metric,
-    '{{ anchor_date }}' as anchor_date,
-    {# Utilize grouping() bits created above to determine the level of aggregation -#}
-    case
-      {% for date_slice in date_slices -%}
-        when {{date_slice}}_bit = 0 then '{{date_slice}}'
-      {% endfor -%}
-    end as date_grain,
-    case
-      {% for date_slice in date_slices -%}
-        when {{date_slice}}_bit = 0 then metric_{{date_slice}}
-      {% endfor -%}
-    end as metric_date,
-    case
-      {% for _ in metric_slices -%}
-        when combination_{{loop.index}}_bit = 0 then combination_{{loop.index}}
-      {% endfor -%}
-      {% if include_overall_total == true -%}
-        when total_bit = 0 then {{total_name}}_object
-      {% endif -%}
-    end as slice_object,
-    {# Create a string of dimension names, utilizing the key-value pairs -#}
-    case
-      {% for _ in metric_slices -%}
-        when combination_{{loop.index}}_bit = 0 then concat(
-          {%- for dimension in metric_slices[loop.index0] -%}
-            ifnull(json_extract_string(slice_object, '$.dim_name'), 'null') {%- if not loop.last -%}, ' x ', {% endif %}
-          {%- endfor -%}
-        )
-      {% endfor -%}
-      {% if include_overall_total == true -%}
-        when total_bit = 0 then '{{total_name}}'
-      {% endif -%}
-    end as slice_dimension,
-    {# Create a string of dimension values, utilizing the key-value pairs -#}
-    case
-      {% for _ in metric_slices -%}
-        when combination_{{loop.index}}_bit = 0 then concat(
-          {%- for dimension in metric_slices[loop.index0] -%}
-            ifnull(json_extract_string(slice_object, '$.dim_value'), 'null') {%- if not loop.last -%}, ' x ', {% endif %}
-          {%- endfor -%}
-        )
-      {% endfor -%}
-      {% if include_overall_total == true -%}
-        when total_bit = 0 then '{{total_value}}'
-      {% endif -%}
-    end as slice_value,
-    case
-      when metric_denominators != 0 and metric_value is null then 0
-      else metric_value
-    end as metric_value,
-    metric_calculation
-  from
-    cte_grouping_sets
+    select
+        '{{ model.name }}' as metric_model,
+        {{ is_snapshot_reliant_metric }} as is_snapshot_reliant_metric,
+        '{{ anchor_date }}' as anchor_date,
+        {# Utilize grouping() bits created above to determine the level of aggregation -#}
+        case
+          {% for date_slice in date_slices -%}
+            when {{date_slice}}_bit = 0 then '{{date_slice}}'
+          {% endfor -%}
+        end as date_grain,
+        case
+          {% for date_slice in date_slices -%}
+            when {{date_slice}}_bit = 0 then metric_{{date_slice}}
+          {% endfor -%}
+        end as metric_date,
+        case
+          {% for _ in metric_slices -%}
+            when combination_{{loop.index}}_bit = 0 then combination_{{loop.index}}
+          {% endfor -%}
+          {% if include_overall_total == true -%}
+            when total_bit = 0 then {{total_name}}_object
+          {% endif -%}
+        end as slice_object,
+        {# Create a string of dimension names, utilizing the key-value pairs -#}
+        case
+          {% for _ in metric_slices -%}
+            when combination_{{loop.index}}_bit = 0 then concat(
+              {%- for dimension in metric_slices[loop.index0] -%}
+                ifnull(json_extract_string(slice_object, '$.dim_name'), 'null') {%- if not loop.last -%}, ' x ', {% endif %}
+              {%- endfor -%}
+            )
+          {% endfor -%}
+          {% if include_overall_total == true -%}
+            when total_bit = 0 then '{{total_name}}'
+          {% endif -%}
+        end as slice_dimension,
+        {# Create a string of dimension values, utilizing the key-value pairs -#}
+        case
+          {% for _ in metric_slices -%}
+            when combination_{{loop.index}}_bit = 0 then concat(
+              {%- for dimension in metric_slices[loop.index0] -%}
+                ifnull(json_extract_string(slice_object, '$.dim_value'), 'null') {%- if not loop.last -%}, ' x ', {% endif %}
+              {%- endfor -%}
+            )
+          {% endfor -%}
+          {% if include_overall_total == true -%}
+            when total_bit = 0 then '{{total_value}}'
+          {% endif -%}
+        end as slice_value,
+        metric_calculation,
+        case
+          when metric_denominators != 0 and metric_value is null then 0
+          else metric_value
+        end as metric_value
+    from
+      cte_grouping_sets
 )
 select * from cte_final
 {% endmacro %}

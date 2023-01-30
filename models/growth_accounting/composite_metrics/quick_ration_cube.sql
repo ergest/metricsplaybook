@@ -4,8 +4,11 @@
 
 select
     '{{ model.name }}' as metric_model,
+    false as is_snapshot_reliant_metric,
+    er.anchor_date,
     er.date_grain,
     er.metric_date,
+    er.slice_object,
     er.slice_dimension,
     er.slice_value,
     '(new_rr + expansion_rr) / (churned_rr + contraction_rr)' as metric_calculation,
