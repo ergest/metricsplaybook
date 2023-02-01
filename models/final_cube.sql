@@ -1,5 +1,5 @@
 {{-
-    config(materialized = 'table')
+    config(materialized = 'view')
 -}}
 
 -- Returns a list of relations that match schema.prefix%
