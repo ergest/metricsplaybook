@@ -3,17 +3,13 @@
 -}}
 
 select 
-    date_trunc('month', started_at), sum(si.mrr_value) as new_revenue
+    date_trunc('month', started_at) as month, 
+    sum(si.mrr_value) as new_revenue
 from
     {{ ref('subscription') }} s
     join {{ ref('subscription_item') }} si 
         on s.id = si.subscription_id
 where
     s.status = 'active'
-    and not exists (
-            select *
-            from subscription
-            where customer_id = s.customer_id
-                and started_at < s.started_at
-    )
+    and s.type = 'new'
 group by 1

@@ -3,13 +3,12 @@
 -}}
 
 select 
-    date_trunc('month', started_at) as month, 
+    date_trunc('month', canceled_at) as month, 
     sum(si.mrr_value) as new_revenue
 from
     {{ ref('subscription') }} s
     join {{ ref('subscription_item') }} si 
         on s.id = si.subscription_id
 where
-    s.status = 'active'
-    and s.type = 'resurrected'
+    s.status = 'canceled'
 group by 1
