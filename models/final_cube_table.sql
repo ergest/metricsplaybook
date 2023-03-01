@@ -3,7 +3,7 @@
 -}}
 
 -- Returns a list of relations that match schema.prefix%
-{%- set cube_tables = dbt_utils.get_relations_by_pattern('main', '%_cube') -%}
+{%- set cube_tables = dbt_utils.get_relations_by_pattern('main', '%cube') -%}
 {{ dbt_utils.union_relations(relations = cube_tables) }}
 
 -- depends_on: {{ ref('churned_subscriptions_cube') }}
