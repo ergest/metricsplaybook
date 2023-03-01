@@ -9,10 +9,10 @@ with active_subscription as (
         s.started_at,
         si.mrr_value,
         lag(si.mrr_value, 1) over(partition by s.customer_id order by greatest(s.canceled_at, s.paused_at) desc) as previous_mrr
-    from
-        subscription s
-        join subscription_item si
-            on s.id = si.subscription_id
+from
+    {{ ref('subscription') }} s
+    join {{ ref('subscription_item') }} si 
+        on s.id = si.subscription_id
     where
         s.status = 'active'
 )

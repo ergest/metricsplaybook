@@ -4,9 +4,10 @@
 
 select 
     date_trunc('month', started_at), sum(si.mrr_value) as new_revenue
-from 
-    subscription s
-    join subscription_item si on s.id = si.subscription_id
+from
+    {{ ref('subscription') }} s
+    join {{ ref('subscription_item') }} si 
+        on s.id = si.subscription_id
 where
     s.status = 'active'
     and not exists (

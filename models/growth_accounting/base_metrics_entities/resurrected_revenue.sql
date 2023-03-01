@@ -9,15 +9,15 @@ with last_stopped_subscription as (
         greatest(canceled_at, paused_at) as stopped_at,
         row_number() over(partition by customer_id order by greatest(canceled_at, paused_at) desc) as rank
     from
-        subscription
+        {{ ref('subscription') }}
     where
         status in ('paused', 'canceled')
 )
 select 
     date_trunc('month', s.started_at), sum(si.mrr_value) as resurrected_revenue
 from
-    subscription s
-    join subscription_item si
+    {{ ref('subscription') }} s
+    join {{ ref('subscription_item') }} si 
         on s.id = si.subscription_id
     join last_stopped_subscription lss
         on s.customer_id = lss.customer_id
