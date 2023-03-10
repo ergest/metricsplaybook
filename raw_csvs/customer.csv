@@ -1,0 +1,501 @@
+id,created_at,owner_id,name,email,phone,segment,industry,first_touch_channel,last_touch_channel,crm_account_id
+1,2023-02-18T17:41:17Z,1,Raye Wycliffe,rwycliffe0@github.com,944-714-7766,segment4,Property-Casualty Insurers,channel2,channel3,1
+2,2023-01-15T15:39:29Z,2,Yvette Horley,yhorley1@artisteer.com,692-653-4531,segment4,Television Services,channel4,channel5,2
+3,2022-08-31T13:33:10Z,3,Ephrem Tinghill,etinghill2@goo.ne.jp,382-110-2497,segment1,Medical/Dental Instruments,channel5,channel2,3
+4,2022-04-29T15:15:19Z,4,Phylys Greveson,pgreveson3@friendfeed.com,670-644-3355,segment2,n/a,channel3,channel2,4
+5,2022-10-31T09:04:29Z,5,Orella Glisenan,oglisenan4@thetimes.co.uk,152-934-7446,segment1,n/a,channel3,channel4,5
+6,2022-07-10T02:00:45Z,6,Heinrik Funcheon,hfuncheon5@shutterfly.com,751-313-2099,segment4,Property-Casualty Insurers,channel3,channel4,6
+7,2022-08-20T13:52:01Z,7,Talbert Meneyer,tmeneyer6@nih.gov,546-615-8002,segment4,Business Services,channel2,channel5,7
+8,2022-08-11T14:59:27Z,8,Patton Bierman,pbierman7@skyrock.com,326-723-3223,segment4,Real Estate Investment Trusts,channel5,channel2,8
+9,2022-08-09T13:59:47Z,9,Wilone Cradey,wcradey8@macromedia.com,219-215-8702,segment1,Package Goods/Cosmetics,channel3,channel4,9
+10,2022-09-18T05:22:42Z,10,Waylin Reford,wreford9@apple.com,726-242-5574,segment1,Environmental Services,channel3,channel1,10
+11,2022-10-02T17:48:11Z,11,Jarrett Pepye,jpepyea@angelfire.com,707-578-7839,segment1,Apparel,channel5,channel3,11
+12,2022-04-27T11:17:51Z,12,Geordie Seabright,gseabrightb@youtube.com,772-250-1442,segment1,Biotechnology: Laboratory Analytical Instruments,channel4,channel3,12
+13,2022-04-05T23:39:44Z,13,Denise Charlet,dcharletc@tinypic.com,812-413-7842,segment4,n/a,channel3,channel5,13
+14,2022-08-10T09:16:10Z,14,Sergeant Franklen,sfranklend@ocn.ne.jp,705-484-4046,segment3,Industrial Machinery/Components,channel2,channel4,14
+15,2022-02-28T04:29:11Z,15,Eryn Brierley,ebrierleye@hibu.com,282-542-5438,segment3,n/a,channel4,channel5,15
+16,2023-01-21T14:07:49Z,16,Brandise Hamm,bhammf@arizona.edu,725-630-6869,segment3,Integrated oil Companies,channel1,channel3,16
+17,2022-08-18T01:03:16Z,17,Freddie Fairlaw,ffairlawg@virginia.edu,381-810-5826,segment4,EDP Services,channel2,channel5,17
+18,2022-03-20T16:15:34Z,18,Bell Riba,bribah@nymag.com,238-299-5244,segment1,Major Pharmaceuticals,channel1,channel2,18
+19,2023-02-21T04:30:49Z,19,Garland Arling,garlingi@dmoz.org,658-354-5550,segment3,n/a,channel3,channel5,19
+20,2022-10-01T13:52:09Z,20,Muffin Burnapp,mburnappj@amazon.de,835-382-8128,segment4,Hospital/Nursing Management,channel3,channel2,20
+21,2022-12-12T16:16:13Z,21,Reba Whiscard,rwhiscardk@aboutads.info,371-715-4823,segment2,Metal Fabrications,channel3,channel4,21
+22,2022-05-08T05:52:49Z,22,Roderic Marquese,rmarquesel@theglobeandmail.com,817-582-9506,segment3,n/a,channel1,channel1,22
+23,2022-12-22T21:26:29Z,23,Patin Dood,pdoodm@cdc.gov,326-605-9458,segment4,Real Estate,channel3,channel3,23
+24,2022-03-20T02:43:11Z,24,Hermon Firpo,hfirpon@state.tx.us,937-917-6375,segment1,n/a,channel5,channel1,24
+25,2022-03-19T10:44:25Z,25,Worthington Nairns,wnairnso@google.com.au,588-153-9650,segment4,Computer Software: Prepackaged Software,channel5,channel1,25
+26,2022-11-23T01:10:11Z,26,Chevalier Garham,cgarhamp@istockphoto.com,512-273-8909,segment4,Finance: Consumer Services,channel3,channel2,26
+27,2022-10-15T14:38:40Z,27,Nels Chainey,nchaineyq@google.nl,454-380-6467,segment2,Business Services,channel4,channel3,27
+28,2022-10-30T00:54:42Z,28,Eve Mascall,emascallr@cam.ac.uk,304-360-6845,segment1,Real Estate Investment Trusts,channel2,channel3,28
+29,2022-06-04T10:25:53Z,29,Yorgos Sterman,ystermans@a8.net,778-587-5528,segment1,Consumer Electronics/Video Chains,channel1,channel1,29
+30,2022-06-03T05:46:28Z,30,Mellisa Gulc,mgulct@amazonaws.com,597-118-9403,segment3,Precious Metals,channel1,channel1,30
+31,2022-06-05T09:03:16Z,31,Fairfax Pawlett,fpawlettu@imdb.com,769-266-9050,segment3,Electrical Products,channel1,channel4,31
+32,2022-09-20T15:32:30Z,32,Samuel Stockford,sstockfordv@sakura.ne.jp,497-539-5678,segment1,Professional Services,channel2,channel3,32
+33,2022-07-19T03:21:13Z,33,Ruddie Burlay,rburlayw@symantec.com,588-592-4427,segment2,Computer peripheral equipment,channel4,channel2,33
+34,2022-05-06T04:32:19Z,34,Jasmina Midgley,jmidgleyx@chicagotribune.com,529-329-7232,segment1,Major Banks,channel4,channel1,34
+35,2022-06-04T03:43:09Z,35,Netty Renshall,nrenshally@booking.com,147-737-6929,segment3,n/a,channel2,channel3,35
+36,2022-08-16T06:46:30Z,36,Benedicta Carren,bcarrenz@springer.com,558-346-2235,segment4,Business Services,channel1,channel4,36
+37,2022-09-29T05:16:39Z,37,Felice Pach,fpach10@google.ru,950-393-2719,segment3,Business Services,channel1,channel3,37
+38,2022-12-08T21:45:17Z,38,Evita Capitano,ecapitano11@pcworld.com,428-933-3579,segment3,Computer Software: Prepackaged Software,channel3,channel2,38
+39,2022-08-28T13:59:41Z,39,Northrop Conybear,nconybear12@mapy.cz,177-869-7316,segment3,EDP Services,channel3,channel2,39
+40,2022-04-20T07:26:17Z,40,Ambur Farmloe,afarmloe13@gravatar.com,324-533-7025,segment3,Major Pharmaceuticals,channel3,channel4,40
+41,2023-02-09T11:21:02Z,41,Austin Mearing,amearing14@army.mil,241-663-2058,segment4,Finance: Consumer Services,channel1,channel5,41
+42,2022-06-25T03:34:30Z,42,Elberta Gallgher,egallgher15@bandcamp.com,794-524-2237,segment3,EDP Services,channel2,channel4,42
+43,2022-12-18T07:47:56Z,43,Essa Pickworth,epickworth16@bandcamp.com,709-588-7415,segment2,Integrated oil Companies,channel1,channel3,43
+44,2022-11-04T07:50:34Z,44,Rip Halgarth,rhalgarth17@ucoz.ru,161-259-4652,segment2,n/a,channel4,channel1,44
+45,2022-07-17T10:32:33Z,45,Camila Woodwing,cwoodwing18@amazon.co.uk,271-901-0088,segment1,Business Services,channel5,channel1,45
+46,2022-09-01T10:20:12Z,46,Thaddeus Kalker,tkalker19@gmpg.org,650-583-5376,segment1,Computer Software: Prepackaged Software,channel1,channel3,46
+47,2022-11-01T06:38:44Z,47,Ilka Igo,iigo1a@hubpages.com,624-342-4573,segment2,Industrial Machinery/Components,channel1,channel4,47
+48,2022-04-06T17:12:50Z,48,Selena de Clerq,sde1b@aboutads.info,169-338-5857,segment3,Marine Transportation,channel3,channel3,48
+49,2022-11-01T14:37:14Z,49,Mitchel Hazelgreave,mhazelgreave1c@symantec.com,303-292-5129,segment4,n/a,channel5,channel2,49
+50,2022-04-09T02:44:29Z,50,Francois Mapplebeck,fmapplebeck1d@ning.com,940-200-3787,segment2,Auto Manufacturing,channel1,channel4,50
+51,2022-12-21T17:38:00Z,51,Piggy Phelp,pphelp1e@bluehost.com,513-213-0904,segment3,Real Estate Investment Trusts,channel3,channel2,51
+52,2022-06-29T05:30:38Z,52,Taber Aleksankov,taleksankov1f@washingtonpost.com,140-341-9804,segment1,n/a,channel1,channel1,52
+53,2022-04-17T20:59:39Z,53,Belva Dunmore,bdunmore1g@wiley.com,567-276-0043,segment1,Business Services,channel3,channel4,53
+54,2022-06-02T19:53:01Z,54,Kameko Vowden,kvowden1h@alibaba.com,987-268-3504,segment4,n/a,channel2,channel2,54
+55,2022-05-24T14:43:15Z,55,Brenna Tweedell,btweedell1i@twitpic.com,383-690-5180,segment3,n/a,channel3,channel1,55
+56,2022-10-19T09:52:15Z,56,Ignaz Courtonne,icourtonne1j@friendfeed.com,691-348-5827,segment2,Steel/Iron Ore,channel5,channel1,56
+57,2022-08-18T17:15:58Z,57,Monica Alexandersen,malexandersen1k@ow.ly,257-934-0262,segment1,Other Specialty Stores,channel2,channel1,57
+58,2022-11-04T06:27:57Z,58,Naoma Soigne,nsoigne1l@mlb.com,302-137-7513,segment2,n/a,channel5,channel2,58
+59,2022-08-17T22:08:52Z,59,Gaelan Falk,gfalk1m@ning.com,746-613-0674,segment3,Semiconductors,channel3,channel2,59
+60,2022-03-27T14:48:19Z,60,Marcello Bankhurst,mbankhurst1n@hatena.ne.jp,177-133-6813,segment3,Oil & Gas Production,channel4,channel3,60
+61,2022-08-02T21:03:37Z,61,Dennison Timbs,dtimbs1o@edublogs.org,704-267-9064,segment1,Oilfield Services/Equipment,channel5,channel1,61
+62,2023-02-12T03:02:41Z,62,Mariette Jakolevitch,mjakolevitch1p@infoseek.co.jp,984-703-6845,segment2,Beverages (Production/Distribution),channel3,channel5,62
+63,2022-03-04T16:46:32Z,63,Arch Newlove,anewlove1q@nyu.edu,211-267-3684,segment3,Major Chemicals,channel2,channel4,63
+64,2022-04-26T15:27:19Z,64,Zachary Feilden,zfeilden1r@icio.us,103-913-2175,segment1,n/a,channel3,channel5,64
+65,2023-02-04T17:21:30Z,65,Conrade Mc Trusty,cmc1s@example.com,501-439-6458,segment1,Ordnance And Accessories,channel2,channel2,65
+66,2022-07-22T14:36:18Z,66,Hyacinthia O'Hagan,hohagan1t@rediff.com,402-114-0399,segment2,Packaged Foods,channel4,channel4,66
+67,2022-04-29T20:39:01Z,67,Robinia Minister,rminister1u@flavors.me,171-294-1872,segment4,Natural Gas Distribution,channel1,channel4,67
+68,2022-03-20T05:10:52Z,68,Paddy Eggleton,peggleton1v@webs.com,584-764-7122,segment1,Major Pharmaceuticals,channel2,channel2,68
+69,2023-02-21T20:39:55Z,69,Nobe Hebden,nhebden1w@virginia.edu,329-925-4397,segment4,n/a,channel4,channel3,69
+70,2022-05-02T01:45:37Z,70,Gregg Brill,gbrill1x@google.com.hk,183-209-4814,segment3,n/a,channel2,channel5,70
+71,2022-09-19T03:33:37Z,71,Tomasina Detloff,tdetloff1y@blinklist.com,597-962-5409,segment1,Life Insurance,channel1,channel5,71
+72,2022-05-24T16:30:23Z,72,Chelsae Potteridge,cpotteridge1z@gov.uk,414-516-9319,segment1,Telecommunications Equipment,channel2,channel4,72
+73,2022-08-25T07:43:21Z,73,Tonye Gulliman,tgulliman20@w3.org,286-855-3691,segment3,Package Goods/Cosmetics,channel4,channel1,73
+74,2022-03-07T22:26:13Z,74,Malina Longman,mlongman21@1688.com,892-717-7739,segment1,Finance: Consumer Services,channel4,channel2,74
+75,2022-12-11T04:39:23Z,75,Manolo Brabin,mbrabin22@toplist.cz,806-208-4807,segment3,Major Banks,channel5,channel3,75
+76,2022-03-19T03:21:27Z,76,Sabina Swynfen,sswynfen23@indiegogo.com,200-454-7279,segment1,n/a,channel5,channel5,76
+77,2022-12-01T09:42:27Z,77,Avrom McDaid,amcdaid24@wikia.com,541-125-6155,segment4,Catalog/Specialty Distribution,channel2,channel1,77
+78,2022-03-14T15:15:00Z,78,Kelly Rainsdon,krainsdon25@lycos.com,906-693-3674,segment4,Professional Services,channel2,channel5,78
+79,2022-05-02T17:59:23Z,79,Artair Kear,akear26@nih.gov,456-520-1171,segment3,Television Services,channel5,channel3,79
+80,2022-07-20T17:52:19Z,80,Row McIlvoray,rmcilvoray27@tiny.cc,640-311-0414,segment2,Major Pharmaceuticals,channel4,channel4,80
+81,2022-07-30T11:49:40Z,81,Marissa Gurden,mgurden28@alibaba.com,125-447-2821,segment1,n/a,channel5,channel3,81
+82,2022-11-05T14:31:06Z,82,Claudio Stuttard,cstuttard29@geocities.jp,226-617-9216,segment1,Major Pharmaceuticals,channel5,channel2,82
+83,2022-12-28T07:25:35Z,83,Phedra Arderne,parderne2a@sbwire.com,569-176-7960,segment2,Home Furnishings,channel5,channel4,83
+84,2022-12-14T07:35:17Z,84,Agnesse Hadrill,ahadrill2b@webmd.com,145-123-9617,segment4,n/a,channel4,channel5,84
+85,2022-11-20T14:39:40Z,85,Myrta Parfett,mparfett2c@ed.gov,884-852-8674,segment3,Major Chemicals,channel4,channel4,85
+86,2022-12-18T05:32:26Z,86,Ernestus Goldfinch,egoldfinch2d@google.co.uk,996-839-0616,segment3,Life Insurance,channel5,channel4,86
+87,2022-04-05T06:12:22Z,87,Brinna Mc Comb,bmc2e@businessweek.com,637-109-5576,segment2,Major Pharmaceuticals,channel2,channel5,87
+88,2022-11-30T04:22:14Z,88,Minnie Scard,mscard2f@php.net,937-903-7986,segment2,Advertising,channel3,channel1,88
+89,2022-06-17T21:12:01Z,89,Nerita Bestwerthick,nbestwerthick2g@jiathis.com,283-431-1947,segment3,n/a,channel5,channel2,89
+90,2022-11-29T03:17:59Z,90,Bobette Flaonier,bflaonier2h@mozilla.org,920-336-3629,segment2,n/a,channel4,channel3,90
+91,2022-07-28T09:11:30Z,91,Isobel Taplow,itaplow2i@wiley.com,432-272-3517,segment3,Major Banks,channel4,channel5,91
+92,2022-09-28T22:18:51Z,92,Aloysia Tipens,atipens2j@parallels.com,396-661-6734,segment3,n/a,channel3,channel5,92
+93,2022-04-01T17:01:03Z,93,Tiebold Toxell,ttoxell2k@a8.net,249-749-9493,segment1,Air Freight/Delivery Services,channel5,channel4,93
+94,2022-05-13T02:41:42Z,94,Laurice Roadknight,lroadknight2l@goodreads.com,800-433-9818,segment3,Natural Gas Distribution,channel5,channel3,94
+95,2022-11-20T07:29:26Z,95,Sauncho Bampkin,sbampkin2m@nbcnews.com,828-327-3686,segment1,Real Estate Investment Trusts,channel1,channel5,95
+96,2022-11-14T11:37:55Z,96,Harmon McCrum,hmccrum2n@theglobeandmail.com,204-816-7119,segment1,Catalog/Specialty Distribution,channel4,channel2,96
+97,2022-12-19T01:36:25Z,97,Fannie Blinerman,fblinerman2o@cbc.ca,709-186-8162,segment1,Power Generation,channel4,channel2,97
+98,2022-12-06T12:57:34Z,98,Shirley Edleston,sedleston2p@biglobe.ne.jp,820-428-9536,segment4,n/a,channel1,channel1,98
+99,2022-06-02T11:03:43Z,99,Gertruda Matchett,gmatchett2q@auda.org.au,130-942-1033,segment3,Marine Transportation,channel3,channel5,99
+100,2022-06-11T03:17:01Z,100,Etienne Kinneally,ekinneally2r@g.co,423-733-0477,segment4,n/a,channel1,channel5,100
+101,2022-06-04T18:05:53Z,101,Jilleen Frogley,jfrogley2s@a8.net,294-249-2083,segment3,Homebuilding,channel1,channel4,101
+102,2022-12-15T11:17:15Z,102,Ardenia Taillant,ataillant2t@macromedia.com,493-355-2238,segment4,"Computer Software: Programming, Data Processing",channel1,channel2,102
+103,2022-12-01T18:38:17Z,103,Donica Wakeley,dwakeley2u@friendfeed.com,810-384-6399,segment1,Aerospace,channel3,channel2,103
+104,2022-04-13T07:41:51Z,104,Hendrick Torel,htorel2v@independent.co.uk,545-553-6655,segment2,Commercial Banks,channel1,channel5,104
+105,2022-12-16T10:10:18Z,105,Malissa Banck,mbanck2w@statcounter.com,705-570-2386,segment4,Major Pharmaceuticals,channel5,channel3,105
+106,2022-07-25T01:16:24Z,106,Romain Weller,rweller2x@google.nl,836-710-1220,segment4,Finance: Consumer Services,channel5,channel1,106
+107,2023-01-09T15:50:15Z,107,Egan Gaynsford,egaynsford2y@mail.ru,677-194-9028,segment2,Multi-Sector Companies,channel3,channel1,107
+108,2022-08-24T20:35:44Z,108,Kally Lamputt,klamputt2z@behance.net,189-308-9667,segment4,Clothing/Shoe/Accessory Stores,channel4,channel5,108
+109,2022-03-08T23:13:12Z,109,Corinna Kildale,ckildale30@cdc.gov,614-385-9203,segment3,Movies/Entertainment,channel2,channel5,109
+110,2022-11-06T14:59:12Z,110,Myrlene Waterhowse,mwaterhowse31@hostgator.com,944-672-2681,segment2,Life Insurance,channel1,channel4,110
+111,2022-07-26T07:15:23Z,111,Crystie Sparwell,csparwell32@delicious.com,231-826-8348,segment1,n/a,channel2,channel1,111
+112,2022-04-05T20:35:04Z,112,Niki McEachern,nmceachern33@360.cn,421-293-9038,segment3,n/a,channel3,channel5,112
+113,2023-02-13T17:20:05Z,113,Latrena Bartalini,lbartalini34@usa.gov,391-781-2503,segment2,Homebuilding,channel2,channel4,113
+114,2023-02-11T02:44:55Z,114,Sherwynd Joliffe,sjoliffe35@un.org,408-672-9944,segment4,Industrial Machinery/Components,channel5,channel5,114
+115,2023-01-08T08:06:38Z,115,Frazer Welham,fwelham36@people.com.cn,186-969-4946,segment4,EDP Services,channel4,channel5,115
+116,2022-10-18T10:55:42Z,116,Ophelie Barnwill,obarnwill37@ocn.ne.jp,945-783-0567,segment2,n/a,channel2,channel1,116
+117,2022-08-11T12:48:09Z,117,Marillin Tomisch,mtomisch38@themeforest.net,956-547-3015,segment3,Business Services,channel5,channel1,117
+118,2022-08-03T13:13:39Z,118,Rainer Whapham,rwhapham39@bloglovin.com,638-572-4872,segment1,Medical/Dental Instruments,channel4,channel5,118
+119,2022-05-24T07:55:27Z,119,Price Barnish,pbarnish3a@alexa.com,190-535-8007,segment1,Major Pharmaceuticals,channel4,channel1,119
+120,2022-10-10T10:32:55Z,120,Barbe Jore,bjore3b@walmart.com,221-888-7916,segment1,Marine Transportation,channel5,channel4,120
+121,2022-11-08T20:44:35Z,121,Gwenore Lempenny,glempenny3c@netvibes.com,456-321-4994,segment4,Telecommunications Equipment,channel5,channel2,121
+122,2022-04-09T12:16:11Z,122,Conrad Canet,ccanet3d@bigcartel.com,289-387-6699,segment2,Oil & Gas Production,channel5,channel3,122
+123,2022-03-18T23:29:06Z,123,Chandler Mars,cmars3e@bing.com,674-785-5964,segment1,Medical Specialities,channel5,channel1,123
+124,2022-07-25T03:37:46Z,124,Rriocard Croney,rcroney3f@pbs.org,861-964-9848,segment2,Natural Gas Distribution,channel2,channel3,124
+125,2022-08-10T00:22:35Z,125,Malachi Clearley,mclearley3g@time.com,544-659-7996,segment4,Business Services,channel1,channel4,125
+126,2022-05-08T14:52:34Z,126,Culley Faustian,cfaustian3h@simplemachines.org,914-112-6486,segment3,Investment Bankers/Brokers/Service,channel2,channel2,126
+127,2022-06-15T12:23:55Z,127,Monica Keming,mkeming3i@bluehost.com,595-866-8318,segment2,n/a,channel4,channel4,127
+128,2022-10-11T10:33:13Z,128,Antonetta Pixton,apixton3j@telegraph.co.uk,927-626-1032,segment1,Medical/Dental Instruments,channel4,channel4,128
+129,2022-08-16T06:51:21Z,129,Margarette Yanov,myanov3k@goo.ne.jp,802-190-1549,segment1,Savings Institutions,channel2,channel3,129
+130,2022-09-15T17:30:07Z,130,Skippie Wharlton,swharlton3l@senate.gov,757-941-4235,segment2,n/a,channel1,channel5,130
+131,2022-03-21T05:39:20Z,131,Leigh MacAlees,lmacalees3m@diigo.com,147-592-9084,segment4,n/a,channel3,channel5,131
+132,2022-05-02T02:59:32Z,132,Hedvig Richold,hrichold3n@google.cn,683-572-1127,segment4,Medical/Dental Instruments,channel2,channel3,132
+133,2022-03-07T18:44:00Z,133,Vaclav Renols,vrenols3o@sourceforge.net,251-470-6906,segment3,Steel/Iron Ore,channel2,channel5,133
+134,2022-07-23T01:01:23Z,134,Scotti Wotherspoon,swotherspoon3p@netscape.com,641-295-2908,segment2,Packaged Foods,channel1,channel3,134
+135,2023-02-02T22:45:44Z,135,Edgardo Crimpe,ecrimpe3q@liveinternet.ru,715-904-3016,segment3,n/a,channel5,channel5,135
+136,2022-04-16T01:00:36Z,136,Winnifred Giamelli,wgiamelli3r@flickr.com,555-294-4474,segment1,n/a,channel4,channel2,136
+137,2022-06-10T01:44:15Z,137,Lucretia Ducket,lducket3s@live.com,108-953-4961,segment2,EDP Services,channel3,channel2,137
+138,2022-04-23T05:20:18Z,138,Lorrie Binford,lbinford3t@npr.org,394-393-6012,segment2,Marine Transportation,channel2,channel3,138
+139,2022-10-25T06:11:29Z,139,Weylin Dodd,wdodd3u@amazonaws.com,656-291-8587,segment1,Biotechnology: Electromedical & Electrotherapeutic Apparatus,channel1,channel3,139
+140,2022-11-07T03:57:38Z,140,Renaud Strewthers,rstrewthers3v@auda.org.au,597-764-9975,segment3,Food Distributors,channel1,channel3,140
+141,2022-12-04T07:09:34Z,141,Eleonora Ferrarone,eferrarone3w@census.gov,632-762-9786,segment2,n/a,channel3,channel1,141
+142,2022-04-06T21:25:29Z,142,Tabby Diegan,tdiegan3x@hubpages.com,936-395-9664,segment2,Home Furnishings,channel5,channel2,142
+143,2022-03-26T16:39:33Z,143,Sutherlan Serchwell,sserchwell3y@hc360.com,460-770-1133,segment4,n/a,channel4,channel3,143
+144,2022-11-25T19:07:11Z,144,Federica Frake,ffrake3z@cafepress.com,850-487-4585,segment3,n/a,channel5,channel3,144
+145,2022-09-25T13:03:05Z,145,Meredeth Tomkinson,mtomkinson40@nps.gov,124-279-9524,segment4,n/a,channel2,channel3,145
+146,2022-05-08T02:24:54Z,146,Arline Hindes,ahindes41@dion.ne.jp,582-442-5271,segment4,Major Pharmaceuticals,channel2,channel1,146
+147,2022-09-10T00:59:28Z,147,Janelle Durnian,jdurnian42@cdc.gov,707-913-1694,segment1,n/a,channel2,channel4,147
+148,2022-06-02T11:40:26Z,148,Irvine Vassano,ivassano43@angelfire.com,336-619-9557,segment2,Specialty Chemicals,channel2,channel4,148
+149,2022-03-16T22:15:24Z,149,Catharina Barrat,cbarrat44@noaa.gov,905-983-8673,segment3,Oil & Gas Production,channel3,channel4,149
+150,2022-02-28T03:58:58Z,150,Morgana Allston,mallston45@unesco.org,787-971-8368,segment2,Hotels/Resorts,channel1,channel1,150
+151,2022-09-21T19:17:05Z,151,Georgina Bonellie,gbonellie46@sogou.com,500-132-2778,segment4,Property-Casualty Insurers,channel5,channel1,151
+152,2022-12-22T18:15:11Z,152,Perice O'Luby,poluby47@sciencedirect.com,901-540-4984,segment2,Major Banks,channel5,channel2,152
+153,2023-01-11T10:13:15Z,153,Tyne Skelcher,tskelcher48@php.net,938-575-0797,segment1,Specialty Insurers,channel3,channel1,153
+154,2022-05-21T12:05:59Z,154,Mair Ferber,mferber49@smugmug.com,251-892-6405,segment1,Major Banks,channel1,channel1,154
+155,2022-10-01T14:24:26Z,155,Chrissie Grindley,cgrindley4a@stumbleupon.com,476-872-9120,segment2,Major Banks,channel2,channel5,155
+156,2022-06-20T22:30:29Z,156,Cathy McPartling,cmcpartling4b@webmd.com,391-507-1546,segment3,Major Pharmaceuticals,channel2,channel5,156
+157,2022-04-12T10:21:00Z,157,Ava Deeney,adeeney4c@last.fm,440-627-2691,segment4,Other Consumer Services,channel2,channel4,157
+158,2022-10-26T16:19:39Z,158,Killian Foucard,kfoucard4d@hatena.ne.jp,120-377-5175,segment4,Real Estate Investment Trusts,channel3,channel5,158
+159,2023-01-13T01:07:28Z,159,Isac Emburey,iemburey4e@newsvine.com,286-703-8825,segment1,Telecommunications Equipment,channel5,channel5,159
+160,2022-10-22T00:25:11Z,160,Legra Wasmer,lwasmer4f@soup.io,894-186-0138,segment4,Savings Institutions,channel2,channel2,160
+161,2022-08-31T10:20:12Z,161,Edlin Benford,ebenford4g@theglobeandmail.com,739-602-4446,segment3,Forest Products,channel3,channel1,161
+162,2022-05-27T13:41:27Z,162,Eziechiele Daintree,edaintree4h@ox.ac.uk,313-531-9347,segment1,Major Pharmaceuticals,channel2,channel4,162
+163,2022-10-08T10:45:38Z,163,Shanan Felton,sfelton4i@myspace.com,453-902-8007,segment3,Natural Gas Distribution,channel4,channel1,163
+164,2022-11-20T12:49:04Z,164,Novelia Drinkwater,ndrinkwater4j@skype.com,216-366-0065,segment2,Restaurants,channel3,channel2,164
+165,2022-11-28T10:16:53Z,165,Sarene Wrefford,swrefford4k@vinaora.com,948-636-3541,segment4,Medical/Dental Instruments,channel5,channel5,165
+166,2022-10-24T05:40:55Z,166,Garrard Hawkings,ghawkings4l@loc.gov,833-913-6962,segment2,Steel/Iron Ore,channel2,channel3,166
+167,2022-05-07T15:24:27Z,167,Arron Jantel,ajantel4m@gizmodo.com,636-497-4938,segment2,Multi-Sector Companies,channel1,channel4,167
+168,2022-04-21T22:46:41Z,168,Jory Cundict,jcundict4n@blogs.com,693-413-4555,segment1,Industrial Machinery/Components,channel2,channel4,168
+169,2022-12-06T21:11:55Z,169,Althea Darragon,adarragon4o@instagram.com,676-763-6794,segment3,n/a,channel1,channel1,169
+170,2022-08-04T13:07:55Z,170,Loreen Andrejs,landrejs4p@spotify.com,436-336-3553,segment3,Metal Fabrications,channel4,channel1,170
+171,2022-05-09T05:27:34Z,171,Matias Izod,mizod4q@dagondesign.com,634-709-2334,segment3,Textiles,channel5,channel2,171
+172,2022-04-23T22:50:50Z,172,Tybie Sent,tsent4r@webmd.com,120-592-2523,segment4,Major Banks,channel4,channel4,172
+173,2023-01-28T22:17:45Z,173,Catlaina Hiddy,chiddy4s@fotki.com,198-731-5264,segment3,Major Banks,channel4,channel5,173
+174,2022-08-02T01:32:20Z,174,Gustie O'Cassidy,gocassidy4t@histats.com,126-945-5191,segment4,Electric Utilities: Central,channel3,channel4,174
+175,2022-03-22T12:20:46Z,175,Marietta Ellerbeck,mellerbeck4u@geocities.com,208-260-6035,segment2,Marine Transportation,channel5,channel4,175
+176,2022-12-04T11:11:11Z,176,D'arcy Jorioz,djorioz4v@census.gov,212-105-0713,segment2,Oil & Gas Production,channel4,channel1,176
+177,2022-03-15T01:19:22Z,177,Piotr Reims,preims4w@instagram.com,529-312-5953,segment3,Other Specialty Stores,channel4,channel4,177
+178,2022-08-25T08:52:27Z,178,Lynelle McQuirter,lmcquirter4x@narod.ru,222-476-6408,segment1,Life Insurance,channel4,channel1,178
+179,2022-09-25T10:31:30Z,179,Cleo Merrydew,cmerrydew4y@creativecommons.org,458-142-4559,segment3,Other Specialty Stores,channel1,channel5,179
+180,2022-07-12T15:02:49Z,180,Birgitta Murrell,bmurrell4z@nationalgeographic.com,654-211-9000,segment1,Natural Gas Distribution,channel4,channel1,180
+181,2022-03-30T10:23:18Z,181,Melisandra D'Ambrogio,mdambrogio50@imgur.com,100-441-6384,segment3,Major Banks,channel3,channel2,181
+182,2022-09-02T16:53:09Z,182,Kaleb Emslie,kemslie51@slideshare.net,978-538-0050,segment1,Metal Fabrications,channel2,channel5,182
+183,2022-09-02T19:28:07Z,183,Moreen Sey,msey52@businessweek.com,325-878-2929,segment2,Oil/Gas Transmission,channel3,channel2,183
+184,2023-01-31T17:00:25Z,184,Sibilla Kale,skale53@theatlantic.com,445-285-8043,segment3,Military/Government/Technical,channel1,channel3,184
+185,2022-02-27T15:20:34Z,185,Berke Kenworthey,bkenworthey54@nsw.gov.au,555-330-6052,segment3,n/a,channel1,channel2,185
+186,2022-05-28T14:38:02Z,186,Artemas Danell,adanell55@oakley.com,835-855-8993,segment3,Major Pharmaceuticals,channel1,channel2,186
+187,2022-08-14T18:56:53Z,187,Beatrice Fortie,bfortie56@msu.edu,125-739-0244,segment3,n/a,channel4,channel2,187
+188,2022-10-30T12:59:00Z,188,Jerrie Sket,jsket57@biglobe.ne.jp,146-896-7246,segment1,Integrated oil Companies,channel3,channel1,188
+189,2022-09-27T02:15:15Z,189,Simona Spenclay,sspenclay58@slideshare.net,645-848-2275,segment2,Major Pharmaceuticals,channel1,channel1,189
+190,2022-04-19T08:16:20Z,190,Thelma Lubomirski,tlubomirski59@washington.edu,422-270-8270,segment4,Railroads,channel1,channel3,190
+191,2022-11-12T22:37:07Z,191,Alina Arrighetti,aarrighetti5a@google.cn,757-284-6169,segment4,Other Specialty Stores,channel1,channel5,191
+192,2022-09-03T14:00:28Z,192,Salem Hexum,shexum5b@illinois.edu,375-798-4730,segment4,n/a,channel4,channel5,192
+193,2022-07-26T19:12:21Z,193,Dalenna Uzelli,duzelli5c@google.co.jp,751-751-3911,segment2,Marine Transportation,channel3,channel3,193
+194,2022-04-05T04:01:24Z,194,Faunie Farris,ffarris5d@state.tx.us,632-789-9253,segment4,n/a,channel4,channel4,194
+195,2022-05-15T20:03:21Z,195,Charlean Ogelbe,cogelbe5e@linkedin.com,304-248-1362,segment2,Other Specialty Stores,channel4,channel2,195
+196,2022-11-12T03:42:19Z,196,Cyb Durdan,cdurdan5f@123-reg.co.uk,593-536-9284,segment3,Major Pharmaceuticals,channel1,channel1,196
+197,2022-03-12T09:55:11Z,197,Ronnie Whittington,rwhittington5g@mozilla.org,127-454-1532,segment2,Marine Transportation,channel4,channel2,197
+198,2022-07-09T20:14:39Z,198,Franciskus Birden,fbirden5h@instagram.com,455-122-1019,segment3,Natural Gas Distribution,channel4,channel4,198
+199,2022-08-24T16:50:54Z,199,Chen Reneke,creneke5i@prlog.org,938-140-9014,segment3,Real Estate Investment Trusts,channel2,channel3,199
+200,2023-01-21T19:33:21Z,200,Maris Ellif,mellif5j@biblegateway.com,210-469-9308,segment1,Electrical Products,channel4,channel4,200
+201,2022-04-25T09:54:13Z,201,Rhianon Blaby,rblaby5k@prweb.com,618-675-8417,segment4,Coal Mining,channel1,channel2,201
+202,2022-05-12T23:32:28Z,202,Michele Anstey,manstey5l@surveymonkey.com,156-334-0672,segment1,Business Services,channel2,channel1,202
+203,2022-03-13T12:53:23Z,203,Nikolaus Goody,ngoody5m@cnet.com,131-511-2612,segment3,Major Banks,channel1,channel2,203
+204,2022-11-26T03:40:00Z,204,Tricia Sinnie,tsinnie5n@printfriendly.com,508-473-3325,segment2,Telecommunications Equipment,channel2,channel3,204
+205,2022-05-23T08:56:42Z,205,Ines Cullotey,icullotey5o@hp.com,730-197-9414,segment3,Real Estate Investment Trusts,channel2,channel5,205
+206,2022-09-28T13:07:56Z,206,Barbee Jacson,bjacson5p@yolasite.com,780-239-5295,segment2,Business Services,channel5,channel1,206
+207,2022-10-09T09:26:11Z,207,Anne-corinne Yanov,ayanov5q@wordpress.org,755-201-6382,segment3,Real Estate,channel2,channel3,207
+208,2023-02-07T05:15:20Z,208,Tiffani Morando,tmorando5r@omniture.com,851-478-0725,segment1,EDP Services,channel4,channel4,208
+209,2022-07-05T14:57:21Z,209,Afton Coarser,acoarser5s@reverbnation.com,138-677-2482,segment1,n/a,channel4,channel1,209
+210,2023-01-16T05:27:23Z,210,Damita Mordacai,dmordacai5t@ezinearticles.com,203-614-8708,segment2,Industrial Specialties,channel1,channel1,210
+211,2022-09-04T03:12:41Z,211,Nerti Presnall,npresnall5u@i2i.jp,192-651-0101,segment4,Apparel,channel5,channel2,211
+212,2022-04-12T04:11:41Z,212,Keri Becom,kbecom5v@bbb.org,491-530-1524,segment2,n/a,channel1,channel1,212
+213,2022-04-22T23:04:47Z,213,Catlee Haysey,chaysey5w@nyu.edu,566-580-8653,segment1,Biotechnology: Laboratory Analytical Instruments,channel2,channel4,213
+214,2022-10-12T04:54:25Z,214,Laurent Dowda,ldowda5x@tumblr.com,262-590-5644,segment1,Real Estate Investment Trusts,channel5,channel4,214
+215,2022-10-28T00:01:36Z,215,Herby Sustin,hsustin5y@de.vu,895-361-8533,segment1,Oil/Gas Transmission,channel3,channel2,215
+216,2022-05-10T21:39:23Z,216,Deck Redler,dredler5z@ovh.net,219-153-9223,segment1,Major Pharmaceuticals,channel1,channel2,216
+217,2023-01-21T18:18:21Z,217,Lilli Moncrieffe,lmoncrieffe60@booking.com,279-709-6241,segment3,n/a,channel1,channel3,217
+218,2022-07-25T14:05:44Z,218,Pat Lamkin,plamkin61@bravesites.com,967-606-6334,segment4,n/a,channel2,channel1,218
+219,2022-07-19T11:00:04Z,219,Alf Bunton,abunton62@hubpages.com,335-714-8730,segment3,Specialty Foods,channel2,channel4,219
+220,2022-10-28T16:09:24Z,220,Candice Linnemann,clinnemann63@msu.edu,703-966-8484,segment2,Medical/Dental Instruments,channel1,channel4,220
+221,2022-10-13T22:57:56Z,221,Rena Janse,rjanse64@ftc.gov,798-957-1861,segment2,n/a,channel2,channel2,221
+222,2022-12-07T08:42:23Z,222,Agnella Whiterod,awhiterod65@ehow.com,712-916-4342,segment1,Industrial Specialties,channel3,channel1,222
+223,2022-12-13T20:22:17Z,223,Aleece Vardey,avardey66@wufoo.com,318-271-4896,segment3,Real Estate,channel2,channel4,223
+224,2022-03-21T06:56:22Z,224,Rory Hurtic,rhurtic67@eventbrite.com,124-204-3672,segment1,Water Supply,channel4,channel2,224
+225,2023-01-15T06:28:18Z,225,Mirabella Dymoke,mdymoke68@newyorker.com,296-964-8092,segment1,Major Pharmaceuticals,channel1,channel2,225
+226,2022-05-24T12:03:04Z,226,Bree Ferrario,bferrario69@ovh.net,928-880-6496,segment1,Television Services,channel2,channel2,226
+227,2022-06-22T03:37:41Z,227,Megan Curm,mcurm6a@harvard.edu,663-899-2288,segment2,Industrial Machinery/Components,channel1,channel2,227
+228,2022-09-14T23:24:00Z,228,Carmina Pinkard,cpinkard6b@oaic.gov.au,821-260-3391,segment4,Major Banks,channel2,channel5,228
+229,2022-12-10T05:25:51Z,229,Coletta Tourot,ctourot6c@typepad.com,447-732-2917,segment4,n/a,channel2,channel5,229
+230,2022-03-23T04:26:11Z,230,Tildie Barajas,tbarajas6d@wikia.com,793-285-5379,segment4,n/a,channel1,channel3,230
+231,2022-05-03T15:40:55Z,231,Zachary Toderi,ztoderi6e@timesonline.co.uk,885-624-1485,segment2,Major Chemicals,channel1,channel1,231
+232,2022-06-08T07:15:55Z,232,Say Lowson,slowson6f@cyberchimps.com,529-976-7063,segment4,Natural Gas Distribution,channel1,channel5,232
+233,2022-12-08T04:16:22Z,233,Friedrich Wisniowski,fwisniowski6g@time.com,159-393-3585,segment3,Real Estate Investment Trusts,channel4,channel3,233
+234,2022-08-18T14:57:32Z,234,Alessandro Landy,alandy6h@oaic.gov.au,127-397-3601,segment4,Real Estate Investment Trusts,channel5,channel3,234
+235,2022-05-06T18:35:30Z,235,Josephine Ambroix,jambroix6i@barnesandnoble.com,868-137-4776,segment1,Farming/Seeds/Milling,channel5,channel3,235
+236,2022-06-27T10:27:13Z,236,Kev Hucke,khucke6j@bizjournals.com,478-892-7012,segment3,Marine Transportation,channel5,channel5,236
+237,2022-10-17T01:38:57Z,237,Velvet McCloud,vmccloud6k@dmoz.org,906-592-4781,segment4,Biotechnology: Electromedical & Electrotherapeutic Apparatus,channel3,channel5,237
+238,2022-07-11T12:07:13Z,238,Darrel Sowray,dsowray6l@reddit.com,745-541-2603,segment1,Shoe Manufacturing,channel5,channel3,238
+239,2022-11-02T12:09:27Z,239,Mandy Rowaszkiewicz,mrowaszkiewicz6m@dailymail.co.uk,741-803-3349,segment4,Oil & Gas Production,channel4,channel1,239
+240,2023-02-11T09:17:34Z,240,Babs Morcom,bmorcom6n@umn.edu,665-380-0458,segment3,n/a,channel5,channel3,240
+241,2022-12-09T18:59:08Z,241,Ashil Jenney,ajenney6o@dailymotion.com,808-592-1339,segment1,Engineering & Construction,channel4,channel5,241
+242,2023-01-09T07:39:54Z,242,Midge Greenroyd,mgreenroyd6p@berkeley.edu,183-968-5712,segment1,Paper,channel3,channel3,242
+243,2022-12-11T14:38:22Z,243,Homere Tatam,htatam6q@ca.gov,712-151-7435,segment3,n/a,channel5,channel2,243
+244,2023-01-12T22:58:22Z,244,Mikkel Dennington,mdennington6r@eepurl.com,523-306-0821,segment1,n/a,channel3,channel5,244
+245,2022-10-09T12:15:15Z,245,Ase Corsor,acorsor6s@github.com,891-921-0900,segment2,Finance/Investors Services,channel1,channel2,245
+246,2022-12-06T18:15:45Z,246,Amory Skehan,askehan6t@technorati.com,597-987-3123,segment2,Major Banks,channel3,channel2,246
+247,2022-10-22T14:42:08Z,247,Kata Hully,khully6u@goodreads.com,671-578-9493,segment1,n/a,channel4,channel2,247
+248,2023-01-07T22:21:16Z,248,Geneva Garbett,ggarbett6v@businessweek.com,312-964-6133,segment2,Steel/Iron Ore,channel5,channel2,248
+249,2023-01-06T21:47:21Z,249,Ferdinande Orbine,forbine6w@about.me,251-139-4629,segment4,Precious Metals,channel4,channel5,249
+250,2022-07-28T21:09:57Z,250,Antony Pollastrone,apollastrone6x@bizjournals.com,416-198-8267,segment4,Industrial Machinery/Components,channel2,channel2,250
+251,2022-07-19T13:26:39Z,251,Susana Byrch,sbyrch6y@mapy.cz,359-125-0963,segment4,n/a,channel1,channel4,251
+252,2022-11-05T19:44:01Z,252,Alano Peacock,apeacock6z@blogtalkradio.com,517-368-8768,segment2,Department/Specialty Retail Stores,channel2,channel1,252
+253,2022-11-24T12:23:52Z,253,Brigham Hizir,bhizir70@ow.ly,845-538-1467,segment1,n/a,channel5,channel2,253
+254,2022-06-11T17:24:40Z,254,Kitty Buckoke,kbuckoke71@yahoo.co.jp,763-326-2445,segment3,Major Banks,channel1,channel2,254
+255,2022-07-06T00:07:59Z,255,Ermengarde Littledyke,elittledyke72@biglobe.ne.jp,495-907-7403,segment1,Industrial Machinery/Components,channel2,channel4,255
+256,2022-02-26T16:13:53Z,256,Arnoldo Stack,astack73@ibm.com,890-246-1724,segment1,Real Estate Investment Trusts,channel4,channel2,256
+257,2022-07-11T11:41:04Z,257,Waiter Arnopp,warnopp74@umich.edu,730-891-1055,segment2,Semiconductors,channel1,channel1,257
+258,2022-09-19T11:37:05Z,258,Kinnie Lamborn,klamborn75@mail.ru,384-581-2427,segment1,EDP Services,channel4,channel2,258
+259,2022-06-18T22:36:14Z,259,Minna Imison,mimison76@psu.edu,329-576-4514,segment1,Environmental Services,channel1,channel5,259
+260,2023-02-08T17:32:03Z,260,Luca Hulstrom,lhulstrom77@wikispaces.com,484-814-6282,segment2,Major Pharmaceuticals,channel3,channel1,260
+261,2022-08-02T15:34:19Z,261,Duncan Bizley,dbizley78@mapquest.com,697-424-3501,segment4,Business Services,channel3,channel5,261
+262,2022-12-30T02:23:31Z,262,Sallie Kendall,skendall79@comsenz.com,295-283-3508,segment4,Major Banks,channel2,channel5,262
+263,2022-07-02T01:50:16Z,263,Farand Bazely,fbazely7a@ca.gov,261-597-9730,segment1,Packaged Foods,channel2,channel2,263
+264,2022-11-12T10:51:38Z,264,Adele Barrett,abarrett7b@foxnews.com,485-554-0867,segment2,Catalog/Specialty Distribution,channel2,channel1,264
+265,2022-04-05T19:35:33Z,265,Odelia Water,owater7c@telegraph.co.uk,668-954-0638,segment3,Computer Software: Prepackaged Software,channel3,channel1,265
+266,2022-04-10T06:12:42Z,266,Prinz Feeny,pfeeny7d@webnode.com,620-419-6371,segment4,Farming/Seeds/Milling,channel4,channel2,266
+267,2022-10-06T16:54:47Z,267,Brewer Halm,bhalm7e@redcross.org,973-641-8212,segment2,n/a,channel2,channel5,267
+268,2022-05-26T15:52:08Z,268,Meghann Vannuchi,mvannuchi7f@etsy.com,722-250-6240,segment2,Other Pharmaceuticals,channel1,channel2,268
+269,2022-12-06T04:32:41Z,269,Damita Tomblin,dtomblin7g@nps.gov,397-653-8026,segment3,Other Specialty Stores,channel3,channel5,269
+270,2022-11-17T01:55:59Z,270,Welbie Gai,wgai7h@nih.gov,405-354-4827,segment2,Major Pharmaceuticals,channel5,channel1,270
+271,2022-04-20T18:49:57Z,271,Kessiah Caneo,kcaneo7i@prweb.com,926-794-5421,segment2,n/a,channel3,channel5,271
+272,2023-01-30T01:05:54Z,272,Lyle Duffell,lduffell7j@e-recht24.de,664-131-9514,segment1,Broadcasting,channel2,channel3,272
+273,2022-05-02T19:46:14Z,273,Evania Nolleau,enolleau7k@usda.gov,378-667-9047,segment2,Major Pharmaceuticals,channel1,channel1,273
+274,2023-01-14T17:56:13Z,274,Rog Ahern,rahern7l@google.cn,125-426-6521,segment2,Major Pharmaceuticals,channel1,channel5,274
+275,2022-03-19T20:57:59Z,275,Natale Limprecht,nlimprecht7m@sakura.ne.jp,820-595-1965,segment3,Industrial Specialties,channel2,channel5,275
+276,2022-11-09T08:30:52Z,276,Almira Izzat,aizzat7n@skype.com,452-847-4759,segment2,Business Services,channel2,channel2,276
+277,2022-06-11T07:10:07Z,277,Barnebas Antonognoli,bantonognoli7o@tiny.cc,830-891-2975,segment3,Major Banks,channel5,channel3,277
+278,2022-03-26T11:19:17Z,278,Georas Redgrave,gredgrave7p@istockphoto.com,843-765-7150,segment4,Major Pharmaceuticals,channel3,channel5,278
+279,2022-04-04T18:20:30Z,279,Giovanni Zavittieri,gzavittieri7q@elpais.com,650-680-9515,segment4,n/a,channel2,channel5,279
+280,2022-08-21T04:35:11Z,280,Florette Conerding,fconerding7r@feedburner.com,389-256-3668,segment3,Major Chemicals,channel2,channel5,280
+281,2023-01-17T14:35:58Z,281,Raimundo Kemetz,rkemetz7s@cdbaby.com,567-382-2055,segment1,n/a,channel2,channel5,281
+282,2022-09-29T18:15:16Z,282,Keefer Celes,kceles7t@dropbox.com,173-712-2663,segment4,Industrial Machinery/Components,channel3,channel3,282
+283,2022-03-24T18:00:48Z,283,Norman Alliker,nalliker7u@usnews.com,783-684-6461,segment2,Industrial Machinery/Components,channel1,channel4,283
+284,2022-08-01T00:50:45Z,284,Lilia Tommis,ltommis7v@economist.com,372-480-9027,segment1,Ordnance And Accessories,channel3,channel4,284
+285,2022-05-25T22:31:14Z,285,Feodora Bremley,fbremley7w@vimeo.com,925-372-1799,segment4,Hotels/Resorts,channel4,channel5,285
+286,2023-01-31T19:44:16Z,286,Abeu Pountney,apountney7x@last.fm,686-364-9212,segment4,Real Estate Investment Trusts,channel1,channel5,286
+287,2022-05-05T01:35:14Z,287,Annice Summerlad,asummerlad7y@quantcast.com,120-150-5212,segment3,Natural Gas Distribution,channel4,channel4,287
+288,2022-10-25T06:18:44Z,288,Gerda Itskovitz,gitskovitz7z@icq.com,449-227-9662,segment3,Life Insurance,channel5,channel2,288
+289,2022-09-16T05:51:21Z,289,Midge Pletts,mpletts80@g.co,916-650-5465,segment1,Business Services,channel1,channel1,289
+290,2022-02-25T16:36:26Z,290,Estelle Rustedge,erustedge81@archive.org,405-451-8074,segment2,n/a,channel3,channel5,290
+291,2022-04-23T14:38:46Z,291,Catina Bullivant,cbullivant82@51.la,741-555-8797,segment3,n/a,channel5,channel4,291
+292,2022-11-26T15:11:14Z,292,Brittani Streatfield,bstreatfield83@bandcamp.com,272-632-2429,segment2,Business Services,channel4,channel2,292
+293,2022-04-03T11:27:45Z,293,Britte McGrowther,bmcgrowther84@behance.net,364-186-4165,segment1,Oil & Gas Production,channel4,channel4,293
+294,2022-05-18T14:02:40Z,294,Loreen Zipsell,lzipsell85@ucoz.ru,306-214-8048,segment4,n/a,channel3,channel2,294
+295,2022-07-24T17:00:11Z,295,Celeste Beades,cbeades86@scribd.com,530-191-1858,segment4,n/a,channel2,channel3,295
+296,2022-09-04T11:12:46Z,296,Amil Scala,ascala87@whitehouse.gov,432-730-6559,segment1,n/a,channel3,channel5,296
+297,2022-03-06T23:29:06Z,297,Liv Triner,ltriner88@forbes.com,731-727-4843,segment2,Auto Parts:O.E.M.,channel1,channel1,297
+298,2022-12-08T11:46:06Z,298,Morgan Standing,mstanding89@elegantthemes.com,647-224-0252,segment3,Office Equipment/Supplies/Services,channel2,channel4,298
+299,2023-01-30T05:06:21Z,299,Ram Alstead,ralstead8a@chronoengine.com,877-147-5793,segment1,n/a,channel3,channel3,299
+300,2023-01-28T04:09:58Z,300,Vanny Throssell,vthrossell8b@google.com.br,646-111-0507,segment1,Semiconductors,channel4,channel4,300
+301,2022-12-11T06:00:47Z,301,Drusilla Groome,dgroome8c@amazonaws.com,205-956-0877,segment3,n/a,channel1,channel1,301
+302,2022-11-24T06:45:29Z,302,Cale Vernazza,cvernazza8d@ftc.gov,283-837-2730,segment4,Construction/Ag Equipment/Trucks,channel1,channel1,302
+303,2022-07-28T08:16:49Z,303,Eudora Curnokk,ecurnokk8e@ovh.net,352-641-9599,segment4,n/a,channel1,channel1,303
+304,2022-11-02T18:53:33Z,304,Brendon Begwell,bbegwell8f@blogtalkradio.com,827-903-6546,segment4,Other Specialty Stores,channel1,channel4,304
+305,2022-07-22T08:21:08Z,305,Noel Gibben,ngibben8g@narod.ru,777-951-0685,segment3,Industrial Machinery/Components,channel1,channel1,305
+306,2023-01-21T13:05:09Z,306,Kristy Haversum,khaversum8h@dmoz.org,724-535-7353,segment2,Containers/Packaging,channel5,channel2,306
+307,2022-11-14T07:43:48Z,307,Lind Shakelade,lshakelade8i@gnu.org,337-660-6560,segment1,n/a,channel1,channel1,307
+308,2023-01-19T03:23:28Z,308,Levy Badgers,lbadgers8j@etsy.com,766-861-7239,segment4,n/a,channel2,channel5,308
+309,2022-03-02T06:52:23Z,309,Luigi McAvin,lmcavin8k@blogtalkradio.com,358-667-6170,segment2,Computer Manufacturing,channel4,channel5,309
+310,2022-04-08T08:14:27Z,310,Francisca Gilliat,fgilliat8l@printfriendly.com,641-644-7471,segment1,n/a,channel5,channel5,310
+311,2022-07-01T11:47:56Z,311,Melessa Antognetti,mantognetti8m@skyrock.com,797-586-6701,segment1,n/a,channel4,channel3,311
+312,2022-05-18T15:19:39Z,312,Valina Balint,vbalint8n@mysql.com,400-479-2003,segment3,Advertising,channel2,channel5,312
+313,2022-07-04T14:48:40Z,313,Gianni Whannel,gwhannel8o@buzzfeed.com,880-745-6213,segment1,Oil & Gas Production,channel5,channel4,313
+314,2022-06-18T06:03:52Z,314,Allan McLagain,amclagain8p@dot.gov,314-175-8418,segment1,Natural Gas Distribution,channel2,channel1,314
+315,2022-04-28T02:04:27Z,315,Jackie Sandwich,jsandwich8q@alibaba.com,865-236-3701,segment3,Major Pharmaceuticals,channel4,channel4,315
+316,2022-03-25T07:32:24Z,316,Meredeth Dreakin,mdreakin8r@dion.ne.jp,314-512-5947,segment1,Investment Managers,channel1,channel5,316
+317,2022-07-29T12:31:59Z,317,Teador Craufurd,tcraufurd8s@twitter.com,216-587-9106,segment3,Computer Manufacturing,channel3,channel1,317
+318,2022-06-13T10:02:13Z,318,Melly Jarnell,mjarnell8t@mapquest.com,912-571-3722,segment2,Oil Refining/Marketing,channel5,channel3,318
+319,2022-06-15T18:50:47Z,319,Sheryl Reeder,sreeder8u@mayoclinic.com,903-387-9287,segment3,EDP Services,channel3,channel2,319
+320,2022-09-20T02:28:38Z,320,Heda Daelman,hdaelman8v@narod.ru,148-819-0690,segment3,Computer Software: Prepackaged Software,channel2,channel2,320
+321,2022-05-14T08:34:19Z,321,Jesselyn Pountney,jpountney8w@ucoz.com,193-452-1300,segment1,Apparel,channel1,channel1,321
+322,2022-07-06T15:58:54Z,322,Verna Strapp,vstrapp8x@alexa.com,527-328-5543,segment2,Consumer Electronics/Appliances,channel1,channel2,322
+323,2023-01-22T00:14:42Z,323,Shandie Rizzardi,srizzardi8y@army.mil,684-760-8957,segment4,Major Banks,channel4,channel2,323
+324,2022-07-28T11:36:43Z,324,Hube Lowerson,hlowerson8z@myspace.com,540-256-6868,segment1,Hospital/Nursing Management,channel3,channel1,324
+325,2022-09-12T19:25:36Z,325,Charissa Fantin,cfantin90@chicagotribune.com,408-867-1830,segment4,Major Pharmaceuticals,channel2,channel4,325
+326,2022-08-29T06:52:16Z,326,Merry Donaldson,mdonaldson91@biblegateway.com,825-775-4512,segment4,Major Banks,channel2,channel2,326
+327,2023-02-21T19:33:09Z,327,Rudolph Geck,rgeck92@wsj.com,409-969-9930,segment2,n/a,channel3,channel5,327
+328,2022-11-16T00:13:15Z,328,Riordan Lang,rlang93@youku.com,519-326-2703,segment2,Coal Mining,channel3,channel2,328
+329,2022-03-13T13:11:16Z,329,Clementine Millions,cmillions94@tamu.edu,986-634-9713,segment2,Major Pharmaceuticals,channel2,channel3,329
+330,2022-12-20T13:37:45Z,330,May Stockoe,mstockoe95@businesswire.com,663-137-6388,segment2,Business Services,channel1,channel4,330
+331,2023-01-09T22:42:49Z,331,Whitney Blaisdell,wblaisdell96@list-manage.com,847-189-1692,segment1,Business Services,channel1,channel2,331
+332,2022-10-04T17:55:40Z,332,Augustine Dallander,adallander97@oaic.gov.au,945-197-4613,segment3,n/a,channel4,channel1,332
+333,2022-10-15T02:39:54Z,333,Thadeus Marland,tmarland98@chicagotribune.com,597-500-3458,segment4,n/a,channel1,channel4,333
+334,2022-11-21T02:58:37Z,334,Terencio Whopples,twhopples99@zdnet.com,944-823-8857,segment4,n/a,channel2,channel2,334
+335,2022-11-10T04:43:01Z,335,Tammie Leimster,tleimster9a@irs.gov,574-244-0999,segment1,Aerospace,channel1,channel1,335
+336,2023-01-14T23:36:14Z,336,Noak Gentery,ngentery9b@theatlantic.com,712-892-5065,segment3,Major Banks,channel3,channel3,336
+337,2022-05-08T03:00:00Z,337,Margret Dowdell,mdowdell9c@oracle.com,223-243-2164,segment1,n/a,channel4,channel1,337
+338,2022-09-25T10:40:13Z,338,Rosco Dulake,rdulake9d@about.me,186-256-3900,segment1,Real Estate Investment Trusts,channel1,channel5,338
+339,2022-12-31T15:59:22Z,339,Gray Evason,gevason9e@jiathis.com,979-547-5819,segment1,Business Services,channel1,channel3,339
+340,2022-10-11T12:10:11Z,340,Giffy Anderbrugge,ganderbrugge9f@chron.com,538-695-4629,segment2,Packaged Foods,channel4,channel4,340
+341,2022-06-07T20:23:13Z,341,Greta Millen,gmillen9g@scientificamerican.com,128-908-8060,segment3,Marine Transportation,channel4,channel4,341
+342,2022-08-22T08:44:12Z,342,Merwin Koppeck,mkoppeck9h@google.com.br,710-221-6400,segment2,n/a,channel5,channel3,342
+343,2022-11-08T10:49:37Z,343,Chlo Wilacot,cwilacot9i@de.vu,800-835-9711,segment4,Beverages (Production/Distribution),channel5,channel3,343
+344,2022-07-16T07:43:30Z,344,Ker Dymock,kdymock9j@plala.or.jp,133-551-1469,segment4,n/a,channel4,channel2,344
+345,2022-09-13T22:30:42Z,345,Malina Strathearn,mstrathearn9k@huffingtonpost.com,921-907-1308,segment1,Investment Bankers/Brokers/Service,channel1,channel1,345
+346,2022-11-26T04:44:02Z,346,Anne-corinne Mawman,amawman9l@storify.com,632-231-1968,segment3,Marine Transportation,channel1,channel5,346
+347,2022-08-08T14:09:09Z,347,Kurt Woollin,kwoollin9m@symantec.com,859-757-1617,segment2,Forest Products,channel4,channel3,347
+348,2022-11-27T21:20:11Z,348,Greggory Taynton,gtaynton9n@latimes.com,123-446-3208,segment3,n/a,channel1,channel1,348
+349,2022-06-11T19:04:27Z,349,Murray Menauteau,mmenauteau9o@buzzfeed.com,986-737-3992,segment2,Major Pharmaceuticals,channel1,channel5,349
+350,2022-04-24T16:26:53Z,350,Major Bummfrey,mbummfrey9p@imageshack.us,992-830-9791,segment2,Agricultural Chemicals,channel3,channel4,350
+351,2022-09-03T15:31:40Z,351,Shaylynn Ubsdale,subsdale9q@theglobeandmail.com,958-793-6003,segment2,Natural Gas Distribution,channel3,channel3,351
+352,2023-01-05T11:05:09Z,352,Fiona Crisford,fcrisford9r@gizmodo.com,465-732-5108,segment4,n/a,channel2,channel4,352
+353,2022-12-12T17:59:32Z,353,Helge Stallebrass,hstallebrass9s@google.es,527-133-9824,segment1,Consumer Electronics/Appliances,channel1,channel5,353
+354,2022-05-13T21:55:35Z,354,Morty Larciere,mlarciere9t@ow.ly,337-692-9512,segment4,Investment Managers,channel2,channel2,354
+355,2022-05-28T09:13:33Z,355,Cece Klimochkin,cklimochkin9u@flickr.com,191-640-4459,segment4,Oilfield Services/Equipment,channel1,channel3,355
+356,2022-07-13T03:34:59Z,356,Brig Kirvin,bkirvin9v@imdb.com,689-599-7445,segment3,Major Pharmaceuticals,channel1,channel2,356
+357,2023-02-08T00:33:59Z,357,Morissa Puckham,mpuckham9w@go.com,192-625-8917,segment4,Banks,channel1,channel4,357
+358,2022-05-10T21:22:35Z,358,Stevana Dyzart,sdyzart9x@imgur.com,948-592-8305,segment4,Beverages (Production/Distribution),channel5,channel4,358
+359,2022-10-30T17:26:17Z,359,Esteban Maloney,emaloney9y@artisteer.com,532-260-2924,segment2,Major Pharmaceuticals,channel3,channel4,359
+360,2022-11-05T08:41:43Z,360,Eilis Ravenshaw,eravenshaw9z@springer.com,680-172-6796,segment4,Electric Utilities: Central,channel5,channel1,360
+361,2022-03-27T02:09:42Z,361,Colby Streeton,cstreetona0@mozilla.com,300-558-1816,segment4,Computer Software: Prepackaged Software,channel1,channel3,361
+362,2023-01-15T06:09:03Z,362,Yetty Gatling,ygatlinga1@blogs.com,525-829-0601,segment3,Telecommunications Equipment,channel1,channel5,362
+363,2023-01-10T14:19:28Z,363,Merl Petegree,mpetegreea2@bizjournals.com,277-944-8193,segment2,Precious Metals,channel4,channel1,363
+364,2023-02-03T20:14:18Z,364,Devonna Tingle,dtinglea3@booking.com,841-504-4623,segment3,Radio And Television Broadcasting And Communications Equipment,channel2,channel2,364
+365,2022-06-02T03:41:15Z,365,Alma Lapthorn,alapthorna4@goo.gl,507-801-1444,segment2,Agricultural Chemicals,channel1,channel4,365
+366,2022-04-16T04:56:27Z,366,Valentino Brilon,vbrilona5@buzzfeed.com,207-727-1702,segment2,n/a,channel5,channel1,366
+367,2022-05-03T23:37:08Z,367,Shane Halsworth,shalswortha6@un.org,918-771-8252,segment1,Biotechnology: Electromedical & Electrotherapeutic Apparatus,channel4,channel4,367
+368,2022-04-15T16:55:58Z,368,Ulrika O'Haire,uohairea7@fda.gov,808-328-3477,segment4,Department/Specialty Retail Stores,channel5,channel5,368
+369,2022-09-05T13:36:57Z,369,Forrest Dorrity,fdorritya8@deviantart.com,360-188-4122,segment1,Major Pharmaceuticals,channel3,channel3,369
+370,2022-06-30T11:45:46Z,370,Griffie Southerns,gsouthernsa9@icio.us,507-815-1698,segment3,Electrical Products,channel4,channel2,370
+371,2022-07-14T06:23:01Z,371,Mayer Quarrington,mquarringtonaa@phoca.cz,160-760-9708,segment3,n/a,channel4,channel4,371
+372,2022-10-10T13:11:26Z,372,Maddy Axton,maxtonab@cpanel.net,133-286-1088,segment4,Radio And Television Broadcasting And Communications Equipment,channel5,channel3,372
+373,2023-02-06T05:47:48Z,373,Clarette D'Andrea,cdandreaac@vimeo.com,345-262-5608,segment1,Catalog/Specialty Distribution,channel1,channel5,373
+374,2022-09-03T04:38:27Z,374,Korella Brudenell,kbrudenellad@alexa.com,334-118-0248,segment4,n/a,channel2,channel3,374
+375,2023-02-21T20:55:49Z,375,Shea Fleckness,sflecknessae@buzzfeed.com,941-591-0335,segment3,Medical/Dental Instruments,channel1,channel4,375
+376,2022-05-21T02:50:38Z,376,Whitby Dinnington,wdinningtonaf@dot.gov,424-466-4079,segment2,Major Banks,channel5,channel2,376
+377,2022-05-25T11:09:15Z,377,Lynna Bembridge,lbembridgeag@goo.gl,668-579-9562,segment3,Natural Gas Distribution,channel2,channel5,377
+378,2022-02-27T11:41:34Z,378,Gertrud Haliday,ghalidayah@cbslocal.com,441-254-0318,segment2,Marine Transportation,channel3,channel2,378
+379,2022-07-01T16:30:32Z,379,Dulce De Zuani,ddeai@github.io,989-242-5802,segment3,Office Equipment/Supplies/Services,channel1,channel3,379
+380,2023-01-24T16:59:20Z,380,Robby Tewkesberry,rtewkesberryaj@fda.gov,364-732-2448,segment2,Natural Gas Distribution,channel4,channel1,380
+381,2022-03-17T14:59:29Z,381,Jefferson Darwent,jdarwentak@reddit.com,766-458-1842,segment4,Industrial Specialties,channel3,channel1,381
+382,2023-01-29T12:24:27Z,382,Clerissa Petteford,cpettefordal@cbsnews.com,950-208-0553,segment3,n/a,channel3,channel1,382
+383,2022-06-16T07:44:25Z,383,Maxwell Yu,myuam@unc.edu,502-642-9563,segment4,Major Pharmaceuticals,channel5,channel1,383
+384,2022-07-27T08:22:12Z,384,Valma Bescoby,vbescobyan@timesonline.co.uk,999-599-9517,segment3,Aerospace,channel2,channel3,384
+385,2022-05-30T10:43:18Z,385,Filippo Devereu,fdevereuao@themeforest.net,498-839-0899,segment4,RETAIL: Building Materials,channel2,channel1,385
+386,2022-11-19T00:43:19Z,386,Merrily Androli,mandroliap@gov.uk,684-149-6016,segment4,Biotechnology: In Vitro & In Vivo Diagnostic Substances,channel3,channel3,386
+387,2022-06-02T13:18:54Z,387,Winfred Bussell,wbussellaq@apple.com,719-182-5796,segment2,Computer Software: Prepackaged Software,channel5,channel1,387
+388,2022-09-16T21:10:51Z,388,Aundrea Salthouse,asalthousear@shutterfly.com,363-291-6329,segment4,Other Consumer Services,channel5,channel1,388
+389,2022-12-20T13:59:35Z,389,Winnie Pittam,wpittamas@amazon.co.uk,708-536-3290,segment4,Broadcasting,channel3,channel1,389
+390,2022-03-16T00:18:55Z,390,Lloyd Birbeck,lbirbeckat@wikia.com,681-446-7923,segment3,Plastic Products,channel2,channel4,390
+391,2022-03-31T05:47:58Z,391,Latrena Carnaman,lcarnamanau@wiley.com,482-378-5971,segment2,Major Banks,channel4,channel3,391
+392,2022-12-22T02:40:52Z,392,Uriah Kreber,ukreberav@feedburner.com,529-164-8210,segment4,Business Services,channel4,channel2,392
+393,2022-06-21T09:41:01Z,393,Gerladina Orrick,gorrickaw@hubpages.com,322-834-6617,segment3,n/a,channel2,channel5,393
+394,2022-12-20T22:06:11Z,394,Sunny Guilayn,sguilaynax@marriott.com,419-431-6146,segment2,Major Pharmaceuticals,channel4,channel2,394
+395,2022-07-22T21:45:19Z,395,Roarke Tadd,rtadday@de.vu,391-894-3189,segment4,n/a,channel3,channel1,395
+396,2022-08-06T03:44:55Z,396,Axe Kevis,akevisaz@patch.com,652-254-1034,segment2,Biotechnology: Biological Products (No Diagnostic Substances),channel2,channel1,396
+397,2022-03-13T19:51:14Z,397,Marris Rowth,mrowthb0@toplist.cz,260-138-4283,segment4,Telecommunications Equipment,channel5,channel1,397
+398,2022-05-17T17:13:41Z,398,Darsey Castellini,dcastellinib1@home.pl,588-236-1166,segment2,Computer Software: Prepackaged Software,channel3,channel5,398
+399,2022-09-10T20:10:38Z,399,Luise Berlin,lberlinb2@illinois.edu,213-818-7049,segment4,n/a,channel5,channel2,399
+400,2022-04-15T00:29:28Z,400,Elliott Southall,esouthallb3@disqus.com,662-433-1316,segment1,Biotechnology: Biological Products (No Diagnostic Substances),channel4,channel5,400
+401,2022-10-10T14:51:56Z,401,Karalee Briton,kbritonb4@boston.com,299-575-5822,segment3,n/a,channel4,channel1,401
+402,2022-04-18T14:21:35Z,402,Thibaut Halliburton,thalliburtonb5@barnesandnoble.com,641-770-7345,segment2,n/a,channel5,channel3,402
+403,2022-08-20T18:44:31Z,403,Bronnie Ingles,binglesb6@google.com,946-208-5890,segment1,Semiconductors,channel4,channel5,403
+404,2022-09-16T05:12:30Z,404,Gillian Gatteridge,ggatteridgeb7@ted.com,148-844-1105,segment1,n/a,channel4,channel3,404
+405,2022-11-01T02:47:08Z,405,Haily Dunabie,hdunabieb8@dailymail.co.uk,128-385-8744,segment1,Real Estate,channel4,channel5,405
+406,2023-02-12T19:49:22Z,406,Adamo Pietzker,apietzkerb9@tinyurl.com,380-111-0326,segment2,Power Generation,channel4,channel3,406
+407,2023-02-13T07:39:46Z,407,Alyssa Jeffcoat,ajeffcoatba@time.com,795-948-6085,segment4,Major Banks,channel4,channel3,407
+408,2022-12-26T10:53:46Z,408,Benita Rozea,brozeabb@dropbox.com,516-610-2445,segment4,n/a,channel2,channel3,408
+409,2022-03-01T09:19:01Z,409,Leyla Mattiacci,lmattiaccibc@xing.com,584-920-0901,segment4,Major Pharmaceuticals,channel2,channel5,409
+410,2022-12-15T06:59:16Z,410,Johan Stedmond,jstedmondbd@cnbc.com,411-659-1611,segment3,n/a,channel4,channel1,410
+411,2022-12-02T18:24:23Z,411,Reinhard Andresser,randresserbe@paginegialle.it,937-213-8065,segment3,Other Specialty Stores,channel3,channel1,411
+412,2023-01-03T04:34:59Z,412,Jaimie Croux,jcrouxbf@hibu.com,134-871-1283,segment4,Radio And Television Broadcasting And Communications Equipment,channel3,channel5,412
+413,2022-09-26T14:25:20Z,413,Iosep Spiller,ispillerbg@kickstarter.com,724-135-0126,segment3,n/a,channel3,channel3,413
+414,2023-01-14T19:06:55Z,414,Ingrid Fine,ifinebh@elegantthemes.com,252-476-3652,segment1,Engineering & Construction,channel3,channel4,414
+415,2022-04-25T16:05:54Z,415,Shauna Mangon,smangonbi@gnu.org,958-800-1358,segment1,Business Services,channel3,channel3,415
+416,2022-05-30T01:05:04Z,416,Neale Terrington,nterringtonbj@nytimes.com,603-658-8810,segment2,Major Banks,channel3,channel5,416
+417,2022-07-02T08:25:03Z,417,Eleanor Sunter,esunterbk@cargocollective.com,613-549-5366,segment4,n/a,channel4,channel5,417
+418,2022-04-20T00:37:58Z,418,Alica Etock,aetockbl@oaic.gov.au,442-648-1122,segment2,n/a,channel1,channel3,418
+419,2022-08-20T17:19:03Z,419,Caritta Chadbourn,cchadbournbm@berkeley.edu,802-868-8729,segment1,Building Materials,channel1,channel4,419
+420,2023-02-07T17:23:11Z,420,Timmie Kelemen,tkelemenbn@prweb.com,976-296-2274,segment4,Major Pharmaceuticals,channel2,channel1,420
+421,2023-02-12T20:46:41Z,421,Danya Copcote,dcopcotebo@nsw.gov.au,457-608-5961,segment3,n/a,channel4,channel5,421
+422,2022-04-27T15:34:18Z,422,Idalina Carette,icarettebp@miibeian.gov.cn,998-325-6020,segment4,Major Pharmaceuticals,channel2,channel3,422
+423,2022-09-24T08:55:57Z,423,Benita Aylett,baylettbq@umich.edu,296-315-7618,segment1,Food Chains,channel2,channel4,423
+424,2022-09-21T00:02:37Z,424,Lorene Gauche,lgauchebr@dropbox.com,313-377-4370,segment1,n/a,channel4,channel5,424
+425,2022-11-03T16:27:50Z,425,Lyn Twinning,ltwinningbs@wp.com,213-206-1684,segment2,Real Estate Investment Trusts,channel3,channel5,425
+426,2022-12-08T06:24:47Z,426,Katya Spera,ksperabt@fc2.com,322-892-8748,segment4,n/a,channel5,channel4,426
+427,2022-09-02T18:38:43Z,427,Clare Ankers,cankersbu@nps.gov,678-571-8138,segment1,Electric Utilities: Central,channel1,channel4,427
+428,2022-12-24T05:48:03Z,428,Wallas Sage,wsagebv@geocities.jp,629-196-3169,segment4,Telecommunications Equipment,channel2,channel5,428
+429,2023-02-16T16:02:23Z,429,Serge Hampshire,shampshirebw@hhs.gov,265-800-6040,segment2,Commercial Banks,channel2,channel2,429
+430,2022-03-24T08:51:10Z,430,Bibbye Lipscombe,blipscombebx@last.fm,244-187-6891,segment4,Engineering & Construction,channel5,channel2,430
+431,2022-08-09T08:45:43Z,431,Clarita Mozzini,cmozziniby@mapquest.com,564-521-0577,segment3,Restaurants,channel5,channel3,431
+432,2022-09-06T20:20:35Z,432,Margaret Dunham,mdunhambz@artisteer.com,765-863-5773,segment1,n/a,channel2,channel5,432
+433,2023-02-12T10:29:56Z,433,Estell Caldayrou,ecaldayrouc0@mit.edu,987-430-2492,segment1,n/a,channel4,channel3,433
+434,2022-09-21T01:59:58Z,434,Ansel Pittam,apittamc1@godaddy.com,689-798-6686,segment1,Biotechnology: Biological Products (No Diagnostic Substances),channel2,channel1,434
+435,2022-09-08T00:52:59Z,435,Morena Readitt,mreadittc2@sina.com.cn,412-170-2143,segment4,Business Services,channel4,channel3,435
+436,2022-03-03T04:36:05Z,436,Constantine Brychan,cbrychanc3@ibm.com,701-183-6256,segment1,Electrical Products,channel5,channel5,436
+437,2023-02-10T07:42:22Z,437,Josselyn Balassa,jbalassac4@thetimes.co.uk,414-816-8827,segment2,n/a,channel1,channel5,437
+438,2022-10-01T10:53:08Z,438,Wittie Meany,wmeanyc5@marriott.com,571-669-9023,segment2,Investment Managers,channel4,channel4,438
+439,2022-12-12T21:28:34Z,439,Tristan Chaudret,tchaudretc6@mediafire.com,785-825-0493,segment2,Hotels/Resorts,channel1,channel5,439
+440,2022-12-03T18:28:35Z,440,Kiersten Street,kstreetc7@ovh.net,689-933-7241,segment2,n/a,channel4,channel2,440
+441,2022-03-05T01:47:14Z,441,Wayland Jiggen,wjiggenc8@google.com,893-261-0979,segment3,RETAIL: Building Materials,channel5,channel1,441
+442,2022-12-25T19:45:11Z,442,Cherilynn Caro,ccaroc9@cafepress.com,519-140-6619,segment1,Electric Utilities: Central,channel2,channel2,442
+443,2022-12-21T08:23:53Z,443,Leontine MacDonnell,lmacdonnellca@amazon.co.uk,780-856-3101,segment2,Major Pharmaceuticals,channel2,channel3,443
+444,2023-01-26T02:35:32Z,444,Stephanus Barrim,sbarrimcb@discuz.net,834-342-3378,segment3,Biotechnology: Biological Products (No Diagnostic Substances),channel2,channel3,444
+445,2022-07-15T20:40:27Z,445,Harmon Sodor,hsodorcc@printfriendly.com,858-233-3902,segment1,Air Freight/Delivery Services,channel3,channel1,445
+446,2022-10-05T19:46:01Z,446,Seward Kleinstub,skleinstubcd@multiply.com,799-586-1755,segment2,Computer Software: Prepackaged Software,channel4,channel4,446
+447,2022-06-14T19:54:36Z,447,Standford Dawney,sdawneyce@blinklist.com,926-619-0960,segment4,n/a,channel5,channel5,447
+448,2022-11-26T01:59:25Z,448,Angelique Brodest,abrodestcf@zimbio.com,647-830-6352,segment3,Computer Software: Prepackaged Software,channel1,channel1,448
+449,2022-06-25T22:58:07Z,449,Ethe Anstice,eansticecg@wikimedia.org,894-305-9712,segment2,Auto Parts:O.E.M.,channel2,channel1,449
+450,2022-08-22T19:07:52Z,450,Willette Ghent,wghentch@engadget.com,239-726-0918,segment2,Savings Institutions,channel5,channel2,450
+451,2022-09-03T19:01:57Z,451,Kari de Tocqueville,kdeci@theatlantic.com,594-776-0760,segment1,EDP Services,channel4,channel4,451
+452,2022-07-04T07:14:14Z,452,Marris Twelves,mtwelvescj@plala.or.jp,988-488-6176,segment4,n/a,channel2,channel1,452
+453,2022-03-10T12:51:15Z,453,Tina Haughton,thaughtonck@bigcartel.com,526-254-5195,segment1,Biotechnology: Electromedical & Electrotherapeutic Apparatus,channel1,channel1,453
+454,2022-12-19T21:52:09Z,454,Hernando Swains,hswainscl@nhs.uk,881-920-1438,segment2,Professional Services,channel3,channel3,454
+455,2022-11-17T12:42:33Z,455,Jae Maasz,jmaaszcm@sakura.ne.jp,622-494-2520,segment4,Computer Software: Prepackaged Software,channel3,channel3,455
+456,2022-11-20T15:32:59Z,456,Felicio Jansky,fjanskycn@disqus.com,421-803-7631,segment4,Professional Services,channel3,channel5,456
+457,2022-05-16T03:05:56Z,457,Naomi Clinning,nclinningco@webmd.com,166-936-3615,segment2,Major Pharmaceuticals,channel5,channel5,457
+458,2022-05-05T20:30:27Z,458,Guinevere Gallihawk,ggallihawkcp@omniture.com,345-291-8941,segment2,Professional Services,channel5,channel5,458
+459,2022-11-17T12:40:20Z,459,Bryanty Neary,bnearycq@istockphoto.com,165-830-5399,segment1,n/a,channel1,channel1,459
+460,2023-02-18T06:06:27Z,460,Wilfrid Need,wneedcr@europa.eu,301-782-2469,segment1,Railroads,channel2,channel5,460
+461,2023-02-20T15:08:54Z,461,Amata Hitchens,ahitchenscs@msn.com,637-121-0069,segment2,Medical/Dental Instruments,channel4,channel4,461
+462,2023-02-04T10:58:19Z,462,Kettie Poli,kpolict@mysql.com,494-193-8705,segment4,Industrial Specialties,channel4,channel1,462
+463,2022-03-21T06:35:35Z,463,Gabriello Von Welden,gvoncu@unblog.fr,311-788-7277,segment2,EDP Services,channel3,channel1,463
+464,2022-08-01T12:23:28Z,464,Ximenez McGirl,xmcgirlcv@de.vu,143-954-2474,segment3,Restaurants,channel5,channel3,464
+465,2022-03-21T14:31:59Z,465,Marybeth Perry,mperrycw@blogger.com,834-437-2021,segment2,Auto Parts:O.E.M.,channel5,channel5,465
+466,2022-02-24T02:14:55Z,466,Bernard O'Cannavan,bocannavancx@live.com,153-293-5767,segment3,Oil Refining/Marketing,channel2,channel2,466
+467,2022-11-19T03:59:56Z,467,Willdon Baish,wbaishcy@vinaora.com,617-550-2717,segment4,Savings Institutions,channel2,channel3,467
+468,2022-09-23T20:55:47Z,468,Tyrone Waddilove,twaddilovecz@digg.com,279-436-6493,segment3,Commercial Banks,channel5,channel1,468
+469,2022-08-30T09:43:59Z,469,Alexine Cancellieri,acancellierid0@360.cn,231-103-9317,segment4,Specialty Insurers,channel5,channel1,469
+470,2023-01-20T09:50:30Z,470,Margy Ruler,mrulerd1@163.com,288-783-9977,segment1,EDP Services,channel5,channel2,470
+471,2023-01-18T18:15:50Z,471,Valentijn Romanelli,vromanellid2@wordpress.com,841-677-2358,segment2,n/a,channel3,channel1,471
+472,2022-11-08T09:16:02Z,472,Pierce Dance,pdanced3@state.tx.us,710-388-1492,segment4,Major Banks,channel5,channel2,472
+473,2022-12-07T06:56:01Z,473,Meriel Sunnucks,msunnucksd4@nifty.com,371-789-2762,segment1,Savings Institutions,channel4,channel2,473
+474,2023-01-10T21:09:31Z,474,Hana Blazy,hblazyd5@senate.gov,613-662-4527,segment3,Real Estate Investment Trusts,channel2,channel2,474
+475,2022-12-07T14:19:48Z,475,Vinni Molden,vmoldend6@lulu.com,841-814-7750,segment1,Computer Software: Prepackaged Software,channel2,channel4,475
+476,2022-06-18T08:47:50Z,476,Tracy Davids,tdavidsd7@nba.com,686-406-9115,segment1,Oil & Gas Production,channel3,channel3,476
+477,2022-12-29T00:29:00Z,477,Peri Knapton,pknaptond8@networkadvertising.org,295-366-7897,segment2,Real Estate Investment Trusts,channel5,channel4,477
+478,2022-07-13T08:59:14Z,478,Avivah MacConnell,amacconnelld9@ask.com,768-724-5292,segment4,Investment Managers,channel4,channel1,478
+479,2023-02-11T22:59:54Z,479,Bartholomeus Prise,bpriseda@parallels.com,292-981-7193,segment3,Clothing/Shoe/Accessory Stores,channel1,channel3,479
+480,2022-12-20T17:04:22Z,480,Emanuel Flannery,eflannerydb@blogger.com,335-845-2627,segment3,Forest Products,channel1,channel4,480
+481,2022-10-19T06:17:22Z,481,Maridel Scupham,mscuphamdc@oracle.com,915-499-7729,segment1,Steel/Iron Ore,channel5,channel2,481
+482,2022-03-10T02:23:58Z,482,Noland Coucher,ncoucherdd@biglobe.ne.jp,751-464-1205,segment2,Major Banks,channel1,channel2,482
+483,2022-09-18T14:50:55Z,483,Jennilee Dunmore,jdunmorede@dedecms.com,226-144-1216,segment4,Property-Casualty Insurers,channel2,channel3,483
+484,2022-08-27T03:28:02Z,484,Alexis Parnby,aparnbydf@tumblr.com,771-686-0519,segment4,Industrial Machinery/Components,channel1,channel3,484
+485,2023-02-18T13:46:12Z,485,Cherlyn Oxborough,coxboroughdg@deliciousdays.com,181-235-0375,segment1,Major Banks,channel3,channel4,485
+486,2022-11-05T17:14:23Z,486,Gilbertina Covotti,gcovottidh@house.gov,298-818-1350,segment1,n/a,channel3,channel2,486
+487,2023-01-06T14:10:58Z,487,Danielle Lexa,dlexadi@wikia.com,969-343-8328,segment4,Business Services,channel5,channel4,487
+488,2022-04-08T16:10:35Z,488,Rozele Whartonby,rwhartonbydj@paginegialle.it,691-154-4575,segment3,Hospital/Nursing Management,channel4,channel4,488
+489,2022-06-30T21:58:22Z,489,Tammie Holehouse,tholehousedk@globo.com,433-703-7751,segment4,n/a,channel5,channel3,489
+490,2022-05-06T10:17:29Z,490,Ab Stieger,astiegerdl@about.com,183-795-7829,segment1,n/a,channel4,channel4,490
+491,2022-05-24T22:07:13Z,491,Myriam MacElroy,mmacelroydm@example.com,886-637-0800,segment4,n/a,channel2,channel3,491
+492,2022-11-22T03:46:54Z,492,Esther Rains,erainsdn@arstechnica.com,922-706-0973,segment4,Savings Institutions,channel1,channel4,492
+493,2022-08-20T12:19:49Z,493,Thomasin Bampfield,tbampfielddo@vkontakte.ru,432-405-2114,segment3,Catalog/Specialty Distribution,channel5,channel4,493
+494,2023-02-10T05:30:39Z,494,Henri Phelips,hphelipsdp@si.edu,216-702-7451,segment3,Savings Institutions,channel5,channel5,494
+495,2023-01-08T20:15:47Z,495,Diannne Nigh,dnighdq@google.pl,995-212-9110,segment4,Finance: Consumer Services,channel4,channel4,495
+496,2022-06-06T21:59:18Z,496,Glen Steer,gsteerdr@goo.ne.jp,311-827-6731,segment3,Major Pharmaceuticals,channel1,channel4,496
+497,2022-07-25T04:07:34Z,497,Orsola Sedger,osedgerds@state.tx.us,149-534-4489,segment4,n/a,channel4,channel3,497
+498,2022-12-12T19:27:33Z,498,Ileana Griffoen,igriffoendt@example.com,209-849-1679,segment3,Clothing/Shoe/Accessory Stores,channel3,channel2,498
+499,2022-11-18T22:09:27Z,499,Marianne Clardge,mclardgedu@infoseek.co.jp,714-701-4075,segment3,Oil & Gas Production,channel3,channel3,499
+500,2022-12-10T22:00:04Z,500,Leigh Quick,lquickdv@shareasale.com,516-278-1738,segment4,n/a,channel5,channel4,500

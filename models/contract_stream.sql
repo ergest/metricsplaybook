@@ -23,6 +23,4 @@
                         and a.timestamp = dt.timestamp"
     )
 }}
-
-select * 
-from read_csv_auto('raw_csvs/src_contract_stream.csv')
+select 1
