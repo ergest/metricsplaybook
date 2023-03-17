@@ -19,7 +19,7 @@ with cte_sequence as (
 , cte_date_spine as (
     select
         id,
-        now() - to_seconds(floor(random()*id*10000)::int) as ts
+        timezone('utc',now()) - to_seconds(floor(random()*id*10000)::int) as ts
     from
         cte_sequence
 ),
@@ -63,7 +63,7 @@ cte_feature_json as (
 select 
     cc.id,
     cc.customer_id,
-    ds.ts,
+    ds.ts as activity_ts,
     '{{activity_name}}' as activity,
     {% if has_revenue_impact == true %} round(random()*10000::float, 2) {% else %} 0 {% endif %} as revenue_impact,
     feature_json
@@ -73,6 +73,4 @@ from
         on cc.id = ds.id
     join cte_feature_json jf
         on cc.id = jf.id
-    join customer c
-        on cc.customer_id = c.id
 {% endmacro %}

@@ -11,7 +11,7 @@ with cte_prep as (
         m.timestamp,
         m.revenue_impact,
         m.activity,
-        m.plan_type
+        m.plan
     from
         {{ ref('contract_stream') }} m
         join {{ ref('dim_customer')}} c
@@ -27,7 +27,7 @@ with cte_prep as (
         metric_slices = [
                 ['segment'],
                 ['channel'],
-                ['plan_type']
+                ['plan']
         ],
         date_slices = ['month'],
         include_overall_total = true
