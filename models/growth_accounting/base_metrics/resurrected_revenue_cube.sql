@@ -5,24 +5,24 @@
 with cte_prep as (
     select
         c.id as customer_id,
-        c.segment,
-        c.channel,
         c.cohort,
-        m.timestamp,
+        c.first_touch_channel as channel,
+        c.segment as segment,        
+        m.activity_ts,
         m.revenue_impact,
         m.activity,
-        m.plan
-    from
-        {{ ref('contract_stream') }} m
-        join {{ ref('dim_customer')}} c
+        json_extract_string(m.feature_json, '$.plan') as plan
+    from    
+        {{ ref('customer_stream_resurrected_contract') }} m
+        join {{ ref('customer') }} c
             on m.customer_id = c.id
     where
-        m.activity = 'resurrection_contract_started'
+        m.activity = 'resurrected_contract'
 )
 {{
     generate_metrics_cube (
         source_cte = 'cte_prep',
-        anchor_date = 'timestamp',
+        anchor_date = 'activity_ts',
         metric_calculation = 'sum(revenue_impact)',
         metric_slices = [
                 ['segment'],

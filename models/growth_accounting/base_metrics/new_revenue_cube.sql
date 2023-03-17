@@ -7,14 +7,14 @@ with cte_prep as (
         c.id as customer_id,
         c.cohort,
         c.first_touch_channel as channel,
+        c.segment as segment,
         m.activity_ts,
         m.revenue_impact,
         m.activity,
-        json_extract_string(m.feature_json, '$.segment') as segment,
         json_extract_string(m.feature_json, '$.plan') as plan
     from    
         {{ ref('customer_stream_started_subscription') }} m
-        join {{ ref('customer')}} c
+        join {{ ref('customer') }} c
             on m.customer_id = c.id
     where
         m.activity = 'started_subscription'

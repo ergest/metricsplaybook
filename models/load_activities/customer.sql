@@ -11,7 +11,7 @@ cte_base as (
         now() - to_seconds(floor(random()*id*10000)::int) as create_date,
         'channel' || floor(50*random())::int::text as first_touch_channel,
         'channel' || floor(50*random())::int::text as last_touch_channel,
-        'segment' || floor(30*random())::int::text as last_touch_channel
+        'segment' || floor(30*random())::int::text as segment
     from
         cte_sequence
 )
