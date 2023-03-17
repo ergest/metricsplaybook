@@ -15,7 +15,6 @@ with cte_sequence as (
         case when id%1000 = 0 then id%1000+1 else id%1000 end as customer_id
     from
         cte_sequence
-    order by id
 )
 , cte_date_spine as (
     select
